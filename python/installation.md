@@ -52,3 +52,5 @@ check which version is currently active
 ```bash
 pyenv version
 ```
+
+for more information (https://github.com/pyenv/pyenv)[https://github.com/pyenv/pyenv]
