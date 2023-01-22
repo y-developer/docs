@@ -38,6 +38,11 @@ pyenv install [PYTHON_VERSION]
 `pyenv install 3.11.1` \
 `pyenv install anaconda3-2020.11`
 
+Uninstall python version
+```bash
+pyenv uninstall [PYTHON_VERSION]
+```
+
 check installed version on pc
 ```bash
 pyenv versions
