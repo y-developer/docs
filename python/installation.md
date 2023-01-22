@@ -1,6 +1,7 @@
 # Python
 
-## for Ubuntu Desktop 22.04
+## Install pyenv
+### for Ubuntu Desktop 22.04
 
 install prerequsites
 ```bash
@@ -10,4 +11,11 @@ sudo apt install make build-essential libssl-dev zlib1g-dev libbz2-dev libreadli
 clone `pyenv` github repo
 ```bash
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+```
+
+set environment variables
+```bash
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(pyenv init --path)"' >> ~/.bashrc
 ```
