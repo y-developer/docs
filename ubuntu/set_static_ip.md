@@ -19,3 +19,13 @@ go to ./ubunut_desktop/22.04/set_static_ip/
 ```bash
 cd ubuntu_desktop/22.04/set_static_ip/
 ```
+
+give execute permission for set_ip.sh
+```bash
+sudo chmod u+x set_ip.sh
+```
+
+run set_ip.sh
+```bash
+sudo ./set_ip.sh
+```
