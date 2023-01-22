@@ -15,7 +15,7 @@ clone repo
 git clone https://github.com/appzicpvt/ubuntu_desktop.git
 ```
 
-go to ./ubunut_desktop/22.04/set_static_ip
+go to ./ubunut_desktop/22.04/set_static_ip/
 ```bash
-cd ./ubunut_desktop/22.04/set_static_ip
+cd ubuntu_desktop/22.04/set_static_ip/
 ```
