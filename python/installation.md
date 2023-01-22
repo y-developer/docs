@@ -33,7 +33,7 @@ Install python version
 ```bash
 pyenv install [PYTHON_VERSION]
 ```
-**ex:-**
+**ex:-** \
 `pyenv install 3.11.1` \
 `pyenv install anaconda3-2020.11` \
 `pyenv install 2.7.1`
