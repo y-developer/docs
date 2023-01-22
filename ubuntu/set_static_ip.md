@@ -33,7 +33,7 @@ run set_ip.sh
 sudo ./set_ip.sh
 ```
 
-give 2 to 224 number for Host
+give any number between 2 to 224 for Host
 
 check connection using ping google DNS
 ```bash
