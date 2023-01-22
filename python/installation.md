@@ -35,3 +35,4 @@ pyenv install [PYTHON_VERSION]
 ```
 **ex:-**
 `pyenv install 3.11.1`
+`pyenv install anaconda3-2020.11`
