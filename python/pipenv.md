@@ -1,11 +1,11 @@
 # pipenv
 
 ## Install pipenv
-on linux
+### on linux
 ```bash
 pip3 install pipenv
 ```
-on windows
+### on windows
 ```bash
 pip install pipenv
 ```
