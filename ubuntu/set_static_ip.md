@@ -15,6 +15,9 @@ clone repo
 git clone https://github.com/appzicpvt/ubuntu_desktop.git
 ```
 
+> if use VirtualBox go to Devices > Network > Network settings..\
+> change `NAT` to `Bridged Adapter`
+
 go to ./ubunut_desktop/22.04/set_static_ip/
 ```bash
 cd ubuntu_desktop/22.04/set_static_ip/
@@ -28,4 +31,11 @@ sudo chmod u+x set_ip.sh
 run set_ip.sh
 ```bash
 sudo ./set_ip.sh
+```
+
+give 2 to 224 number for Host
+
+check connection using ping google DNS
+```bash
+ping 8.8.8.8
 ```
