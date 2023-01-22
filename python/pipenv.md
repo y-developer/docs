@@ -1,16 +1,11 @@
 # pipenv
 
 ## Install pipenv
-### on linux
-```bash
-pip3 install pipenv
-```
-### on windows
 ```bash
 pip install pipenv
 ```
 
-## Initialize project using pip env
+## Initialize project with pipenv
 project folder එක තුලට ගොස්
 ```bash
 pipenv shell
@@ -18,7 +13,7 @@ pipenv shell
 
 ## Install packages
 ```bash
-pipenv install <package_name>=<version>
+pipenv install <package_name>
 ```
 ## Uninstall packages
 ```bash
