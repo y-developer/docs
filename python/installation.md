@@ -37,3 +37,13 @@ pyenv install [PYTHON_VERSION]
 `pyenv install 2.7.1` \
 `pyenv install 3.11.1` \
 `pyenv install anaconda3-2020.11`
+
+check installed version on pc
+```bash
+pyenv versions
+```
+
+check which version is currently active
+```bash
+pyenv version
+```
