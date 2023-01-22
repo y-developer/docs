@@ -48,9 +48,15 @@ check installed version on pc
 pyenv versions
 ```
 
+To select a default Python version in PC
+```bash
+pyenv global [PYTHON_VERSION]
+```
+
 check which version is currently active
 ```bash
 pyenv version
 ```
 
-for more information (https://github.com/pyenv/pyenv)[https://github.com/pyenv/pyenv]
+
+for more information [https://github.com/pyenv/pyenv](https://github.com/pyenv/pyenv)
