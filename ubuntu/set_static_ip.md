@@ -15,7 +15,8 @@ clone repo
 git clone https://github.com/appzicpvt/ubuntu_desktop.git
 ```
 
-> if use VirtualBox go to Devices > Network > Network settings..\
+> **if use VirtualBox** \
+> go to Devices > Network > Network settings.. \
 > change `NAT` to `Bridged Adapter`
 
 go to ./ubunut_desktop/22.04/set_static_ip/
