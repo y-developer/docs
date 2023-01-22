@@ -22,4 +22,16 @@ echo 'eval "$(pyenv init --path)"' >> ~/.bashrc
 
 close the current terminal and open new one
 
-## Usage pyenv
+## Usage of pyenv
+
+Find list all versions available
+```bash
+pyenv install -l
+```
+
+Install python version
+```bash
+pyenv install [PYTHON_VERSION]
+```
+**ex:-**
+`pyenv install 3.11.1`
