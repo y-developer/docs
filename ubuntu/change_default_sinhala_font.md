@@ -1,4 +1,4 @@
-# Set Sinhala language 22.04
+# Change Default Sinhala Font 22.04
 
 Update system
 ```bash
@@ -28,5 +28,10 @@ sudo chmod u+x set_font.sh
 Run .sh file
 ```bash
 sudo ./set_font.sh
+```
+
+Come back and remove repo
+```bash
+cd ../../../ && rm -fr ubuntu_desktop
 ```
 
