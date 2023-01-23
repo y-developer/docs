@@ -56,7 +56,7 @@ node --version
 ## Automate switch versions for projects
 If you would like to avoid having to remember to switch versions, you can take things a step further by creating a `.nvmrc` file in your **project’s root**
 ```bash
-$ echo "12" > .nvmrc
+echo "12" > .nvmrc
 ```
 
 for more information https://github.com/nvm-sh/nvm
