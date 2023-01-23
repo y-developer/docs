@@ -25,6 +25,11 @@ To add Oracle VirtualBox PPA to the Ubuntu system
 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/virtualbox.gpg] https://download.virtualbox.org/virtualbox/debian jammy contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
 ```
 
+remove downloaded key
+```bash
+rm -f oracle_vbox_2016.asc
+```
+
 Update system
 ```bash
 sudo apt update
