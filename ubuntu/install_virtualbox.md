@@ -22,7 +22,7 @@ cat oracle_vbox_2016.asc | gpg --dearmor | sudo tee /usr/share/keyrings/virtualb
 
 To add Oracle VirtualBox PPA to the Ubuntu system
 ```bash
-sudo echo "deb [arch=amd64 signed-by=/usr/share/keyrings/virtualbox.gpg] https://download.virtualbox.org/virtualbox/debian jammy contrib" >> /etc/apt/sources.list.d/virtualbox.list
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/virtualbox.gpg] https://download.virtualbox.org/virtualbox/debian jammy contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
 ```
 
 Update system
