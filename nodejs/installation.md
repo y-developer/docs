@@ -43,11 +43,6 @@ Check installed version on pc
 nvm ls
 ```
 
-To select a default Node.js version in PC
-```bash
-nvm alias default [NODEJS_VERSION]
-```
-
 Switching Between Node.js Versions
 ```bash
 nvm use [NODEJS_VERSION]
