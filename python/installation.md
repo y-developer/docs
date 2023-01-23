@@ -1,6 +1,6 @@
 # Install Python using pyenv
 
-### for Ubuntu Desktop 22.04
+## Install on Ubuntu Desktop 22.04
 
 install prerequsites
 ```bash
@@ -23,7 +23,7 @@ close the current terminal and open new one
 
 ## Usage of pyenv
 
-Find list all versions available
+Find list all versions available for installation
 ```bash
 pyenv install -l
 ```
@@ -62,4 +62,4 @@ python --version
 ```
 
 
-for more information [https://github.com/pyenv/pyenv](https://github.com/pyenv/pyenv)
+for more information https://github.com/pyenv/pyenv
