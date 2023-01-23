@@ -5,3 +5,8 @@ Install VLC player
 sudo snap install vlc
 ```
 
+Install video thubnail
+```bash
+sudo apt install ffmpegthumbnailer
+```
+
