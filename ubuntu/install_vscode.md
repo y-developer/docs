@@ -35,7 +35,7 @@ Update system
 sudo apt update
 ```
 
-Install VirtualBox 7
+Install vscode
 ```bash
 sudo apt install code
 ```
