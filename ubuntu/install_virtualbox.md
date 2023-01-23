@@ -7,7 +7,7 @@ sudo apt update
 
 Install prerequsites
 ```bash
-sudo apt install wget
+sudo apt install wget gpg
 ```
 
 Download the package signing GPG key
