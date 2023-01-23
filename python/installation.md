@@ -1,6 +1,5 @@
-# Python
+# Install Python using pyenv
 
-## Install pyenv
 ### for Ubuntu Desktop 22.04
 
 install prerequsites
