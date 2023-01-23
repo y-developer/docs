@@ -25,7 +25,7 @@ Update system
 sudo apt update
 ```
 
-Install VirtualBox 7
+Install Google Chrome
 ```bash
 sudo apt install google-chrome-stable
 ```
