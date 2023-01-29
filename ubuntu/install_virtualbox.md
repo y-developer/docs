@@ -1,8 +1,8 @@
-# Install VirtualBox 7 on Ubuntu 22.04
-
 <p align="center">
   <img src="../image/virtualbox-logo.png" />
 </p>
+
+# Install VirtualBox 7 on Ubuntu 22.04
 
 Update system
 ```bash
