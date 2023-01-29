@@ -1,5 +1,9 @@
 # Install vscode on ubuntu 22.04
 
+<p align="center">
+  <img src="../image/vscode-logo.png" />
+</p>
+
 Update system
 ```bash
 sudo apt update
