@@ -8,4 +8,5 @@
 [![python](../image/python-logo.png)](./install_python.md)
 
 # How to Configure
-[![google chrome](../image/staticip-logo.png)](./set_static_ip.md)
+[![set static ip](../image/staticip-logo.png)](./set_static_ip.md)
+[![change sinhala font](../image/change-sinhal-font.png)](./change_default_sinhala_font.md)
