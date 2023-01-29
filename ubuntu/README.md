@@ -6,3 +6,6 @@
 [![virtualbox](../image/virtualbox-logo.png)](./install_virtualbox.md)
 [![nodejs](../image/nodejs-logo.png)](./install_nodejs.md)
 [![python](../image/python-logo.png)](./install_python.md)
+
+# How to Configure
+[![google chrome](../image/staicip-logo.png)](./set_static_ip.md)
