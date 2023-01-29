@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="../image/vlc-logo.png" />
-</p>
-
 # How to Install
 
 [![google chrome](../image/google-chrome-logo.png)](./install_google_chrome.md)

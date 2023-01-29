@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../image/vlc-logo.png" />
+</p>
+
 # Install Media Player
 
 Install VLC player
