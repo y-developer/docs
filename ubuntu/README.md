@@ -8,4 +8,4 @@
 [![python](../image/python-logo.png)](./install_python.md)
 
 # How to Configure
-[![google chrome](../image/staicip-logo.png)](./set_static_ip.md)
+[![google chrome](../image/staticip-logo.png)](./set_static_ip.md)
