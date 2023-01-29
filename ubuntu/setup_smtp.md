@@ -71,3 +71,31 @@ hostname=localhost
 FromLineOverride=YES
 
 ```
+
+# Send simple email
+
+```bash
+echo -e 'Subject: test\n\nTesting ssmtp' | sendmail -v to_user@gmail.com
+```
+
+# Send full email
+
+Make text file
+```bash
+nano mail.txt
+```
+
+Add following text to file
+```text
+To:to_user@gmail.com
+CC:cc_user@example.com
+From:for_user@gmail.com
+Subject: This is subject of email
+
+This is content of email
+```
+
+Send email
+```bash
+sendmail -t < mail.txt
+```
