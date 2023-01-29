@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../image/nodejs-logo.png" />
+</p>
+
 # Install Nodejs using nvm
 
 ## Install on Ubuntu Desktop 22.04

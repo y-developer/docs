@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../image/python-logo.png" />
+</p>
+
 # Install Python using pyenv
 
 ## Install on Ubuntu Desktop 22.04
