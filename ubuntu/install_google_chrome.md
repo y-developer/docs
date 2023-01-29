@@ -1,6 +1,8 @@
 # Install Google Chrome on Ubuntu 22.04
 
-![google chrome](../image/google-chrome-logo.png)
+<p align="center">
+  <img src="../image/google-chrome-logo.png" />
+</p>
 
 Update system
 ```bash
