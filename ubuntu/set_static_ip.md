@@ -1,4 +1,4 @@
-# Ubuntu Desktop 22.04
+# Set staic ip (IPv4) in Ubuntu Desktop 22.04
 
 update system
 ```bash
