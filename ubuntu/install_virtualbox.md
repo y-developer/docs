@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../image/virtualbox-logo.png" />
+  <img src="../images/virtualbox-logo.png" />
 </p>
 
 # Install VirtualBox 7 on Ubuntu 22.04

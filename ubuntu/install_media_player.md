@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../image/vlc-logo.png" />
+  <img src="../images/vlc-logo.png" />
 </p>
 
 # Install Media Player

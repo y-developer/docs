@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../image/google-chrome-logo.png" />
+  <img src="../images/google-chrome-logo.png" />
 </p>
 
 # Install Google Chrome on Ubuntu 22.04

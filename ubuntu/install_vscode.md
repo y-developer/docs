@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../image/vscode-logo.png" />
+  <img src="../images/vscode-logo.png" />
 </p>
 
 # Install vscode on ubuntu 22.04

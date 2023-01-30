@@ -1,6 +1,6 @@
 # Netwoking
 
-![cover image](./images/cover_image.jpg)
+![cover photo](../images/networking/cover_image.jpg)
 
 ## Table of Content
 

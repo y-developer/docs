@@ -1,28 +1,28 @@
 <p align="center">
-  <img src="../image/smtp-logo.png" />
+  <img src="../images/smtp-logo.png" />
 </p>
 
 # Genarate Google SMTP Password
 - Click 9 dot icon
 - Goto `Account` page
 
-![account](../image/generate-google-password/goto-google-account.png)
+![account](../images/generate-google-password/goto-google-account.png)
 
 - Goto `Security` section
 
-![Security](../image/generate-google-password/goto-security.png)
+![Security](../images/generate-google-password/goto-security.png)
 
 - Goto `2 Step Verification` and setup it
 
-![2 step verification](../image/generate-google-password/2-step-verification.jpg)
+![2 step verification](../images/generate-google-password/2-step-verification.jpg)
 
 - After goto `App password`
 
-![app password](../image/generate-google-password/app-password.jpg)
+![app password](../images/generate-google-password/app-password.jpg)
 
 - Generate passord for `Other (Custom name)`
 
-![](../image/generate-google-password/generate-passwd.jpg)
+![](../images/generate-google-password/generate-passwd.jpg)
 
 # Setup SMTP on Ubuntu 22.04
 

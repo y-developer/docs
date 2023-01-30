@@ -1,16 +1,16 @@
 # How to Install
 
-[![google chrome](../image/google-chrome-logo.png)](./install_google_chrome.md)
-[![vlc player](../image/vlc-logo.png)](./install_media_player.md)
-[![vscode](../image/vscode-logo.png)](./install_vscode.md)
-[![virtualbox](../image/virtualbox-logo.png)](./install_virtualbox.md)
-[![nodejs](../image/nodejs-logo.png)](./install_nodejs.md)
-[![python](../image/python-logo.png)](./install_python.md)
+[![google chrome](../images/google-chrome-logo.png)](./install_google_chrome.md)
+[![vlc player](../images/vlc-logo.png)](./install_media_player.md)
+[![vscode](../images/vscode-logo.png)](./install_vscode.md)
+[![virtualbox](../images/virtualbox-logo.png)](./install_virtualbox.md)
+[![nodejs](../images/nodejs-logo.png)](./install_nodejs.md)
+[![python](../images/python-logo.png)](./install_python.md)
 
 # How to Configure
-[![set static ip](../image/staticip-logo.png)](./set_static_ip.md)
-[![change sinhala font](../image/change-sinhal-font.png)](./change_default_sinhala_font.md)
-[![smtp](../image/smtp-logo.png)](./setup_smtp.md)
+[![set static ip](../images/staticip-logo.png)](./set_static_ip.md)
+[![change sinhala font](../images/change-sinhal-font.png)](./change_default_sinhala_font.md)
+[![smtp](../images/smtp-logo.png)](./setup_smtp.md)
 
 # Package Managers
-[![apt](../image/apt-logo.png)](./apt_guide.md)
+[![apt](../images/apt-logo.png)](./apt_guide.md)

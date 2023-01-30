@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../images/change-sinhal-font.png" />
+</p>
+
 # Change Default Sinhala Font 22.04
 
 Update system

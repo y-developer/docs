@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../images/apt-logo.png" />
+</p>
+
 # Advanced Package Tool (apt)
 
 ## Check Packages

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../image/nodejs-logo.png" />
+  <img src="../images/nodejs-logo.png" />
 </p>
 
 [click here](../nodejs/installation.md)
