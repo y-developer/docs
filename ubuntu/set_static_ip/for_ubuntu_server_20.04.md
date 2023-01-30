@@ -3,7 +3,7 @@
   <img src="../../images/ubuntu-server-20.04.png" />
 </p>
 
-# Set staic ip (IPv4) in Ubuntu Desktop 22.04
+# Set staic ip (IPv4) in Ubuntu Server 20.04
 
 update system
 ```bash
