@@ -34,61 +34,61 @@ apt show <package_name>
 
 To Install a package
 ```bash
-apt install <package_name>
+sudo apt install <package_name>
 ```
 
 To install multiple packages with one command
 ```bash
-apt install <package1> <Package2>
+sudo apt install <package1> <Package2>
 ```
 
 Download package without installing. Downloaded file located in `/var/cache/apt/archives/`
 
 ```bash
-apt install --download-only --assume-yes <package_name>
+sudo apt install --download-only --assume-yes <package_name>
 ```
 
 ## Update Packages
 
 Updating package index
 ```bash
-apt update
+sudo apt update
 ```
 
 Upgrading packages
 ```bash
-apt upgrade
+sudo apt upgrade
 ```
 
 If you want to upgrade a single package
 
 ```bash
-apt upgrade <package_name>
+sudo apt upgrade <package_name>
 ```
 
 If that is needed to upgrade the whole system
 ```bash
-apt full-upgrade
+sudo apt full-upgrade
 ```
 
 ## Remove Packages
 
 To remove an installed package
 ```bash
-apt remove <package_name>
+sudo apt remove <package_name>
 ```
 
 To remove multiple packages with one command
 ```bash
-apt remove <package1> <package2>
+sudo apt remove <package1> <package2>
 ```
 
 To remove the package including all configuration files
 ```bash
-apt purge <package_name>
+sudo apt purge <package_name>
 ```
 
 To remove unused packages
 ```bash
-apt autoremove
+sudo apt autoremove
 ```
