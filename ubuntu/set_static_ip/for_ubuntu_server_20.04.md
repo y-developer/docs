@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="../images/staticip-logo.png" />
+  <img src="../../images/staticip-logo.png" />
+  <img src="../../images/ubuntu-server-20.04.png" />
 </p>
 
 # Set staic ip (IPv4) in Ubuntu Desktop 22.04
@@ -16,16 +17,16 @@ sudo apt install git
 
 clone repo
 ```bash
-git clone https://github.com/appzicpvt/ubuntu_desktop.git
+git clone https://github.com/appzicpvt/ubutu_server.git
 ```
 
 > **if use VirtualBox** \
 > go to Devices > Network > Network settings.. \
 > change `NAT` to `Bridged Adapter`
 
-go to ./ubunut_desktop/22.04/set_static_ip/
+go to ./ubuntu_server/20.04/set_static_ip/
 ```bash
-cd ubuntu_desktop/22.04/set_static_ip/
+cd ubuntu_server/20.04/set_static_ip/
 ```
 
 give execute permission for set_ip.sh
