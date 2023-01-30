@@ -14,3 +14,4 @@
 
 # Package Managers
 [![apt](../images/apt-logo.png)](./apt_guide.md)
+[![snapcraft](../images/snapcraft_logo.png)](./snapcraft_guide.md)
