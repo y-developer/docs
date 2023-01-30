@@ -17,7 +17,7 @@ sudo apt install git
 
 clone repo
 ```bash
-git clone https://github.com/appzicpvt/ubutu_server.git
+git clone https://github.com/appzicpvt/ubuntu_server.git
 ```
 
 > **if use VirtualBox** \
