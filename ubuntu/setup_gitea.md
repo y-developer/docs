@@ -72,7 +72,7 @@ ssh-copy-id gituser@192.168.8.25
 ```
 > **error එකක් පැමිණියහොත්**\
 > public ssh key එක copy කිරීමට ගිය විට පහත ආකාරයට error එකක් පැමිණියහොත් නිල් පාටින් රවුම් කර ඇති command එක යොදන්න.
->![img](./ref/ssh_copy_error.png)
+>![img](../images/gitea/ssh_copy_error.png)
 >```bash
 >ssh-keygen -f "/home/yasitha/.ssh/known_hosts" -R "192.168.8.25"
 >```
@@ -154,7 +154,7 @@ cat credentials.txt
 
 දැන් `credentials.txt` එකේ data භාවිතා කරමින් configuration form එක fill කරන්න.
 
-![img](./ref/config.png)
+![img](../images/gitea/config.png)
 
 ## Delete Source Folder
 
