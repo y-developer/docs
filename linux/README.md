@@ -13,7 +13,7 @@
 [![smtp](../images/smtp-logo.png)](./setup_smtp.md)
 [![ssh](../images/ssh-logo.png)](./setup_ssh.md)
 [![gitea](../images/gita-logo.png)](./setup_gitea.md)
-[![cron job](../images/cron-job-logo.png)]()
+[![cron job](../images/cron-job-logo.png)](./setup_cron_job.md)
 
 # Package Managers
 [![apt](../images/apt-logo.png)](./apt_guide.md)
