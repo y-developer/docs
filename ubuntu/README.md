@@ -12,6 +12,7 @@
 [![change sinhala font](../images/change-sinhal-font.png)](./change_default_sinhala_font.md)
 [![smtp](../images/smtp-logo.png)](./setup_smtp.md)
 [![ssh](../images/ssh-logo.png)](./setup_ssh.md)
+[![gitea](../images/gita-logo.png)](./setup_gitea.md)
 
 # Package Managers
 [![apt](../images/apt-logo.png)](./apt_guide.md)
