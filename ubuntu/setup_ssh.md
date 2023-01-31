@@ -18,6 +18,10 @@ sudo apt install openssh-server
 
 ## Generate SSH public and private key pair on client
 
+public and private key එකක් සාමාන්‍යයෙන් (default) generate වන්නේ `/home/current_user/.ssh/` folder එක තුලයි.
+
+Generate වන key pair එකෙන් public key එක වන්නේ `.pub` වලින් අවසන් වන key එකයි.
+
 පහත algorithm වර්ග වලින් කැමති **එකක්** පමණක් generate කරගන්න. 
 
 ### rsa
@@ -52,6 +56,15 @@ this is a new algorithm added in OpenSSH. Support for it in clients is not yet u
 ssh-keygen -t ed25519
 ```
 
+## Copy public key to the Server
 
+```bash
+ssh-copy-id -i ~/.ssh/<key_name> <user>@<host>
+```
+
+**Ex :-**
+```bash
+ssh-copy-id -i ~/.ssh/id_ecdsa.pub gituser@192.168.8.25
+```
 
 for more infromation https://www.ssh.com/academy/ssh/keygen
