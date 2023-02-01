@@ -156,7 +156,7 @@ cat credentials.txt
 
 ![img](../images/gitea/config.png)
 
-## Delete Source Folder
+## Delete Source Folder and Reboot
 
 දැන් නැවත server එකට ssh මගින් login වෙන්න.
 ```bash
@@ -168,9 +168,14 @@ Delete source folder
 rm -fr deploy
 ```
 
-දැන් server එකෙන් logout වෙන්න. 
+ls මගින් folder එක delete වී ඇති දැයි තහවුරු කරගන්න
 ```bash
-logout
+ls
+```
+
+දැන් server එකෙන් reboot කරන්න. 
+```bash
+sudo reboot
 ```
 
 # Backup command
