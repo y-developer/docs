@@ -8,6 +8,7 @@
 [![python](../images/python-logo.png)](./install_python.md)
 
 # How to Configure
+[![set time](../images/time-logo.png)](./set_time.md)
 [![set static ip](../images/staticip-logo.png)](./set_static_ip/set_static_ip.md)
 [![change sinhala font](../images/change-sinhal-font.png)](./change_default_sinhala_font.md)
 [![smtp](../images/smtp-logo.png)](./setup_smtp.md)
