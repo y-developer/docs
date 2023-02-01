@@ -41,5 +41,11 @@ current user ට අදාලව අවුරුද්දේ සෑම දින
 sudo crontab -u <user> -e
 ```
 
+# Debug cronjob
+in ubuntu
+```bash
+cat /var/log/syslog | grep -i "cron"
+```
+
 
 
