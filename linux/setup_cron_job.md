@@ -14,7 +14,9 @@ Get list of Cron Jobs
 crontab -l
 ```
 
-# How to make cron job
+# How to make cron job using -e
+
+![crontab info](../images/crontab/crontab-info.png)
 
 ## for current user
 
@@ -23,8 +25,6 @@ crontab -l
 ```bash
 crontab -e
 ```
-
-![crontab info](../images/crontab/crontab-info.png)
 
 current user ට අදාලව අවුරුද්දේ සෑම දිනකම හවස 6:20 ට `test.txt` නමින් `this is my content` නමින් අන්තර්ගතයක් සහිත file එකක් සෑදීම. 
 
@@ -39,6 +39,29 @@ current user ට අදාලව අවුරුද්දේ සෑම දින
 මෙයද මුල් වතා වේ භාවිතා කරන විට text editor එක කුමක් භාවිතා කල යුතුදැයි අසයි. එයට nano text editor එක ලබා දීම වඩා පහසු වේ. 
 ```bash
 sudo crontab -u <user> -e
+```
+
+# File එකක් භාවිතයෙන් cronjob එකක් සෑදීම
+තමන්ට ලබා දීමට අවශ්‍ය cronjob එක file එකක සාදා ගැනීම. මෙහිදී සාදා ඇති file එකේ නම `mycron` වේ.
+```bash
+echo "00 09 * * 1-5 echo hello" >> mycron
+```
+
+සදාගත් cronjob එක currnet user ට ලබා දීමට අවශ්‍ය නම්
+```bash
+crontab mycron
+```
+
+OR
+
+`username` නම් වෙනත් user කෙනෙකුට ලබා දීමට අවශ්‍ය නම්
+```bash
+sudo --user=username crontab mycron
+```
+
+සාදාගත් file එක මකා දැමීම
+```bash
+rm mycron
 ```
 
 # Debug cronjob
