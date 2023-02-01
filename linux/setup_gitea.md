@@ -63,7 +63,7 @@ cd ../../../ && rm -fr ubuntu_server
 ```
 
 ## Generate SSH Public and Private key pair
-https://github.com/appzicpvt/docs/blob/main/ubuntu/setup_ssh.md
+https://github.com/appzicpvt/docs/blob/main/linux/setup_ssh.md
 
 ## Login from Client to Server 
 දැන් client PC එකේ සිට server public ssh key එක copy කිරීම සදහා පහත command එක භාවිතා කරන්න.
