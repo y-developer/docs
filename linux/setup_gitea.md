@@ -178,12 +178,6 @@ ls
 sudo reboot
 ```
 
-# Backup command
-
-```bash
-cd /home/giteagit/ && sudo --user=giteagit gitea dump --custom-path /var/lib/gitea/custom --work-path /var/lib/gitea --config /etc/gitea/app.ini && cd && sudo mv /home/giteagit/gitea-dump-*.zip .
-```
-
 # Get Token
 ```bash
 curl --header "Content-Type: application/json" --data '{"name":"perpos"}' --user '<username>:<password>' http://git.local/api/v1/users/<username>/tokens
