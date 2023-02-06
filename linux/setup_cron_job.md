@@ -67,7 +67,7 @@ rm mycron
 # Debug cronjob
 in ubuntu
 ```bash
-cat /var/log/syslog | grep -i "cron"
+tail -n 20 /var/log/syslog | grep -i "cron"
 ```
 
 
