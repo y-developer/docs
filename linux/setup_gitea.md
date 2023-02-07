@@ -217,7 +217,7 @@ sudo reboot
 Project එක තුලට ගොස් පහත command දෙක යොදන්න.
 
 ```bash
-npm config set registry https://git.local/api/packages/appzic/npm/
+npm config set registry http://git.local/api/packages/appzic/npm/
 ```
 
 ```bash
