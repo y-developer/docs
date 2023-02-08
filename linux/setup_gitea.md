@@ -210,18 +210,40 @@ ls
 sudo reboot
 ```
 
-# Upload npm package
+# Private Repo URL
 
-## Project එකක Gitea Nodejs Package Registry එක add කිරීම
+```bash
+http://<username>:<taken>@git.local/<username>/<project_name>.git
+```
+
+# Gitea NPM Package Registry
+
+## Add package to Gitea NPM Package Registry
+
+### Commands භාවිතයෙන්
 
 Project එක තුලට ගොස් පහත command දෙක යොදන්න.
 
+1. `username` එක හා `personal_access_token` එක replace කර පහත command එක project එකේ root එක තුලදී භාවිතා කරන්න.
 ```bash
-npm config set registry http://git.local/api/packages/appzic/npm/
+npm config set -- '//git.local/api/packages/<username>/npm/:_authToken' "<personal_access_token>"
 ```
 
+2. `username` එක replace කර පහත command එක project එකේ root එක තුලදී භාවිතා කරන්න.
 ```bash
-npm config set -- '//git.local/api/packages/appzic/npm/:_authToken' "personal_access_token"
+npm config set registry http://git.local/api/packages/<username>/npm/
+```
+
+
+### Config file භාවිතයෙන්
+1. `home` directory එක තුල `.npmrc` file එකක් සාදා එයට `//git.local/api/packages/<username>/npm/:_authToken=<personal_access_token>` යන line එක යොදන්න. එය යෙදීමේදී `username` එක හා `personal_access_token` එක replace කිරීමට වගබලා ගන්න. නැතහොත් පහත command එක භාවිතා කරන්න. 
+```bash
+echo "//git.local/api/packages/<username>/npm/:_authToken=<personal_access_token>" >> ~/.npmrc
+```
+
+2. Project root එක තුල `.npmrc` file එකක් සාදා එයට `registry=http://git.local/api/packages/<username>/npm/` යන line එක යොදන්න. එය යෙදීමේදී `username` එක replace කිරීමට වගබලා ගන්න. නැතහොත් project එකේ root එකේදී පහත command එක භාවිතා කරන්න.
+```bash
+echo registry=http://git.local/api/packages/<username>/npm/ >> ./.npmrc
 ```
 
 ## Upadte Package Version
