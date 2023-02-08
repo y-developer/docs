@@ -260,6 +260,18 @@ npm version <version_type>
 npm publish
 ```
 
+## Download Pacakge
+Project root එක තුල `.npmrc` file එකක් සාදා එයට `registry=http://git.local/api/packages/<username>/npm/` යන line එක යොදන්න. එය යෙදීමේදී `username` එක replace කිරීමට වගබලා ගන්න. නැතහොත් project එකේ root එකේදී පහත command එක භාවිතා කරන්න.
+```bash
+echo registry=http://git.local/api/packages/<username>/npm/ >> ./.npmrc
+```
+
+දැන් සාමාන්‍ය පරිදි npm install මගින් package එක install කරගන්න.
+```bash
+npm install <package_name>@<version>
+```
+
+
 # Get Token
 
 ```bash
