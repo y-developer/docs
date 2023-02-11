@@ -258,6 +258,61 @@ echo registry=http://gitea.local/api/packages/<username>/npm/ >> ./.npmrc
 npm install <package_name>@<version>
 ```
 
+# Gitea PyPI Package Registry
+
+## Add package to Gitea PyPI Package Registry
+
+home dir එකට ගොස් එහි `.pypirc` නමින් file එකක් සාදා එයට පහත code එක යොදන්න. `<username>` හා `<personal_access_token>` එක replace කිරීමට වගබලා ගන්න.
+```cfg
+[distutils]
+index-servers =
+        gitea
+
+[gitea]
+repository = http://git.local/api/packages/appzic/pypi
+username = <username>
+password = <personal_access_token>
+```
+
+මීට අමතරව තවත් pypi registry එකක් add කිරීමට අවශ්‍යයි නම් එය පහත ආකාරයට ඇතුලත් කල හැක.
+```cfg
+[distutils]
+index-servers =
+        gitea
+        testpypi
+
+[gitea]
+repository = http://git.local/api/packages/appzic/pypi
+username = <username>
+password = <personal_access_token>
+
+[testpypi]
+repository = https://test.pypi.org/legacy/
+username = __token__
+password = <testpypi_access_token>
+```
+
+PyPI package එකක් publish කිරීමට `setuptools` හා `twine`
+```bash
+pipenv install setuptools twine
+```
+
+## Build Package
+
+```bash
+python setup.py sdist bdist_wheel
+```
+
+## Publish Package
+```bash
+twine upload --repository gitea dist/*
+```
+
+## Download Pacakge
+```bash
+pipenv install -i http://gitea.local/api/packages/<username>/pypi/simple <package_name>=<version>
+```
+
 # Get Token
 
 ```bash
