@@ -12,9 +12,21 @@ pipenv shell
 ```
 
 ## Install packages
+Package එකක් install කිරීම
 ```bash
 pipenv install <package_name>
 ```
+Project එකේ පවතින සියළුම packages Install කිරීම සදහා \
+Project root එකට ගොස්
+```bash
+pipenv install
+```
+
+Project එකේ පවතින සියළුම packages pip lock භාවිතයෙන් `නිවැරදිම versions` install කිරීම. 
+```bash
+pipenv install --ignore-pipfile
+```
+
 ## Uninstall packages
 ```bash
 pipenv uninstall <package_name>
