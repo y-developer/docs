@@ -144,7 +144,7 @@ installer.sh run කරන්න.
 sudo ./installer.sh
 ```
 
-Install වීම සාර්ථක නම් http://git.local ට යන්න. http://git.local load වෙන්නේ නැතිනම් ඔබගේ pc එකට `git.local` DNS Entry එක add කල යුතුය. ඒ සදහා [Client PC එකට DNS Entry එකක් add කිරීම](#client-pc-එකට-dns-entry-එකක්-add-කිරීම) බලන්න.
+Install වීම සාර්ථක නම් http://gitea.local ට යන්න. http://gitea.local load වෙන්නේ නැතිනම් ඔබගේ pc එකට `gitea.local` DNS Entry එක add කල යුතුය. ඒ සදහා [Client PC එකට DNS Entry එකක් add කිරීම](#client-pc-එකට-dns-entry-එකක්-add-කිරීම) බලන්න.
 
 දැන් server එකෙන් reboot කරන්නන.
 
@@ -186,14 +186,14 @@ sudo nano /etc/hosts
 
 එම file එකට පහත entry එක යොදා `ctrl+o` මගින් save කර `ctrl+x` මගින් ඉවත්වන්න.
 
-> 192.168.8.253 git.local
+> 192.168.8.253 gitea.local
 
 <br>
 
 # Private Repo URL
 
 ```bash
-http://<username>:<taken>@git.local/<username>/<project_name>.git
+http://<username>:<taken>@gitea.local/<username>/<project_name>.git
 ```
 
 # Gitea NPM Package Registry
@@ -207,27 +207,27 @@ Project එක තුලට ගොස් පහත command දෙක යොද�
 1. `username` එක හා `personal_access_token` එක replace කර පහත command එක project එකේ root එක තුලදී භාවිතා කරන්න.
 
 ```bash
-npm config set -- '//git.local/api/packages/<username>/npm/:_authToken' "<personal_access_token>"
+npm config set -- '//gitea.local/api/packages/<username>/npm/:_authToken' "<personal_access_token>"
 ```
 
 2. `username` එක replace කර පහත command එක project එකේ root එක තුලදී භාවිතා කරන්න.
 
 ```bash
-npm config set registry http://git.local/api/packages/<username>/npm/
+npm config set registry http://gitea.local/api/packages/<username>/npm/
 ```
 
 ### Config file භාවිතයෙන්
 
-1. `home` directory එක තුල `.npmrc` file එකක් සාදා එයට `//git.local/api/packages/<username>/npm/:_authToken=<personal_access_token>` යන line එක යොදන්න. එය යෙදීමේදී `username` එක හා `personal_access_token` එක replace කිරීමට වගබලා ගන්න. නැතහොත් පහත command එක භාවිතා කරන්න.
+1. `home` directory එක තුල `.npmrc` file එකක් සාදා එයට `//gitea.local/api/packages/<username>/npm/:_authToken=<personal_access_token>` යන line එක යොදන්න. එය යෙදීමේදී `username` එක හා `personal_access_token` එක replace කිරීමට වගබලා ගන්න. නැතහොත් පහත command එක භාවිතා කරන්න.
 
 ```bash
-echo "//git.local/api/packages/<username>/npm/:_authToken=<personal_access_token>" >> ~/.npmrc
+echo "//gitea.local/api/packages/<username>/npm/:_authToken=<personal_access_token>" >> ~/.npmrc
 ```
 
-2. Project root එක තුල `.npmrc` file එකක් සාදා එයට `registry=http://git.local/api/packages/<username>/npm/` යන line එක යොදන්න. එය යෙදීමේදී `username` එක replace කිරීමට වගබලා ගන්න. නැතහොත් project එකේ root එකේදී පහත command එක භාවිතා කරන්න.
+2. Project root එක තුල `.npmrc` file එකක් සාදා එයට `registry=http://gitea.local/api/packages/<username>/npm/` යන line එක යොදන්න. එය යෙදීමේදී `username` එක replace කිරීමට වගබලා ගන්න. නැතහොත් project එකේ root එකේදී පහත command එක භාවිතා කරන්න.
 
 ```bash
-echo registry=http://git.local/api/packages/<username>/npm/ >> ./.npmrc
+echo registry=http://gitea.local/api/packages/<username>/npm/ >> ./.npmrc
 ```
 
 ## Upadte Package Version
@@ -246,10 +246,10 @@ npm publish
 
 ## Download Pacakge
 
-Project root එක තුල `.npmrc` file එකක් සාදා එයට `registry=http://git.local/api/packages/<username>/npm/` යන line එක යොදන්න. එය යෙදීමේදී `username` එක replace කිරීමට වගබලා ගන්න. නැතහොත් project එකේ root එකේදී පහත command එක භාවිතා කරන්න.
+Project root එක තුල `.npmrc` file එකක් සාදා එයට `registry=http://gitea.local/api/packages/<username>/npm/` යන line එක යොදන්න. එය යෙදීමේදී `username` එක replace කිරීමට වගබලා ගන්න. නැතහොත් project එකේ root එකේදී පහත command එක භාවිතා කරන්න.
 
 ```bash
-echo registry=http://git.local/api/packages/<username>/npm/ >> ./.npmrc
+echo registry=http://gitea.local/api/packages/<username>/npm/ >> ./.npmrc
 ```
 
 දැන් සාමාන්‍ය පරිදි npm install මගින් package එක install කරගන්න.
@@ -261,7 +261,7 @@ npm install <package_name>@<version>
 # Get Token
 
 ```bash
-curl --header "Content-Type: application/json" --data '{"name":"perpos"}' --user '<username>:<password>' http://git.local/api/v1/users/<username>/tokens
+curl --header "Content-Type: application/json" --data '{"name":"perpos"}' --user '<username>:<password>' http://gitea.local/api/v1/users/<username>/tokens
 ```
 
 # Configure Gitea
