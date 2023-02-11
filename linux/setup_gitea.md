@@ -58,7 +58,7 @@ sudo chmod u+x set_ip.sh
 sudo ./set_ip.sh
 ```
 
-Host එකට `25` දෙන්න
+Host එකට `254` දෙන්න
 
 නිවැරදිව IP address එක සකස් වී ඇති දැයි පරික්ෂා කිරීමට google DNS එක ping කරන්න.
 
@@ -81,7 +81,7 @@ https://github.com/appzicpvt/docs/blob/main/linux/setup_ssh.md
 දැන් client PC එකේ සිට server public ssh key එක copy කිරීම සදහා පහත command එක භාවිතා කරන්න.
 
 ```bash
-ssh-copy-id gituser@192.168.8.25
+ssh-copy-id gituser@192.168.8.254
 ```
 
 > **error එකක් පැමිණියහොත්**\
@@ -89,13 +89,13 @@ ssh-copy-id gituser@192.168.8.25
 > ![img](../images/gitea/ssh_copy_error.png)
 >
 > ```bash
-> ssh-keygen -f "/home/yasitha/.ssh/known_hosts" -R "192.168.8.25"
+> ssh-keygen -f "/home/yasitha/.ssh/known_hosts" -R "192.168.8.254"
 > ```
 >
 > දැන් නැවත public key එක copy කරන්න.
 >
 > ```bash
-> ssh-copy-id gituser@192.168.8.25
+> ssh-copy-id gituser@192.168.8.254
 > ```
 >
 > .
@@ -103,7 +103,7 @@ ssh-copy-id gituser@192.168.8.25
 දැන් ssh මගින් server එකට log වෙන්න.
 
 ```bash
-ssh gituser@192.168.8.25
+ssh gituser@192.168.8.254
 ```
 
 log වීම සාර්ථක නම් server එකෙන් logout වෙන්න.
@@ -117,13 +117,13 @@ logout
 මුලදී extract කරගත් gitea folder එකේ පවතින `deploy folder` එක server එකට scp මගින් copy කරගන්න.
 
 ```bash
-scp -r ./gitea/deploy gituser@192.168.8.25:/home/gituser/
+scp -r ./gitea/deploy gituser@192.168.8.254:/home/gituser/
 ```
 
 දැන් නැවත server එකට ssh මගින් login වෙන්න.
 
 ```bash
-ssh gituser@192.168.8.25
+ssh gituser@192.168.8.254
 ```
 
 deploy folder එක තුලට යන්න.
@@ -155,7 +155,7 @@ sudo reboot
 දැන් නැවත server එකට ssh මගින් login වෙන්න.
 
 ```bash
-ssh gituser@192.168.8.25
+ssh gituser@192.168.8.254
 ```
 
 Delete source folder
@@ -186,7 +186,7 @@ sudo nano /etc/hosts
 
 එම file එකට පහත entry එක යොදා `ctrl+o` මගින් save කර `ctrl+x` මගින් ඉවත්වන්න.
 
-> 192.168.8.25 git.local
+> 192.168.8.254 git.local
 
 <br>
 
