@@ -2,7 +2,7 @@
 
 ## Install pipenv
 ```bash
-pip install pipenv
+pip install pipenv=2023.2.4
 ```
 
 ## Initialize project with pipenv
