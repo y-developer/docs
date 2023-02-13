@@ -304,7 +304,7 @@ npm install <package_name>@<version>
 # Gitea PyPI Package Registry
 
 <p align="center">
-  <img src="../images/gitea/pypi_logo_250x150.png" />
+  <img src="../images/gitea/pypi_logo_250x200.png" />
 </p>
 
 ## Add package to Gitea PyPI Package Registry
