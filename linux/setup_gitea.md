@@ -184,6 +184,17 @@ sudo reboot
 sudo nano /etc/hosts
 ```
 
+## Backup
+backup file එක Google Drive එකට upload වේ.
+```
+/usr/local/bin/dobackup.sh
+```
+
+## Restore
+```bash
+/usr/local/bin/dorestore.sh <backup_file>
+```
+
 එම file එකට පහත entry එක යොදා `ctrl+o` මගින් save කර `ctrl+x` මගින් ඉවත්වන්න.
 
 > 192.168.8.253 gitea.local
