@@ -204,7 +204,7 @@ backup file එක Google Drive එකට upload වේ.
 ```
 
 # Private Repo URL
-
+`git remote set origin` සදහා මෙය භාවිතා කල හැක.
 ```bash
 http://<username>:<taken>@gitea.local/<username>/<project_name>.git
 ```
