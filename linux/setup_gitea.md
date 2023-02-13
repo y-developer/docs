@@ -3,9 +3,8 @@
   <img src="../images/gita-logo.png" />
 </p>
 
-<h1> Gitea for Ubuntu Server 20.04 </h1>
-
 <p align="center">
+  <h1> Gitea for Ubuntu Server 20.04 </h1>
   <img src="../images/gitea/gitea_logo_250x170.png" />
 </p>
 
