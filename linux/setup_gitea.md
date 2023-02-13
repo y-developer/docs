@@ -5,6 +5,13 @@
 
 # Gitea for Ubuntu Server 20.04
 
+## Table of Contents
+- [How to installl](#how-to-install)
+- [How to Backup](#how-to-backup)
+- [How to Restore](#how-to-Restor)
+- [Private Repo URL](#private-repo-url)
+- []
+
 # How to install
 
 ## Prepare Server
@@ -184,21 +191,19 @@ sudo reboot
 sudo nano /etc/hosts
 ```
 
-
-
 එම file එකට පහත entry එක යොදා `ctrl+o` මගින් save කර `ctrl+x` මගින් ඉවත්වන්න.
 
 > 192.168.8.253 gitea.local
 
 <br>
 
-# Backup
+# How to Backup
 backup file එක Google Drive එකට upload වේ.
 ```
 /usr/local/bin/dobackup.sh
 ```
 
-# Restore
+# How to Restore
 ```bash
 /usr/local/bin/dorestore.sh <backup_file>
 ```
