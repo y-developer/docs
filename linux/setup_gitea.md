@@ -6,11 +6,33 @@
 # Gitea for Ubuntu Server 20.04
 
 ## Table of Contents
-- [How to installl](#how-to-install)
+- [Gitea for Ubuntu Server 20.04](#gitea-for-ubuntu-server-2004)
+  - [Table of Contents](#table-of-contents)
+- [How to install](#how-to-install)
+  - [Prepare Server](#prepare-server)
+  - [Create SSH Connection](#create-ssh-connection)
+  - [Generate SSH Public and Private key pair](#generate-ssh-public-and-private-key-pair)
+  - [Login from Client to Server](#login-from-client-to-server)
+  - [Install Gitea](#install-gitea)
+  - [Client PC එකට DNS Entry එකක් add කිරීම](#client-pc-එකට-dns-entry-එකක්-add-කිරීම)
 - [How to Backup](#how-to-backup)
-- [How to Restore](#how-to-Restor)
+- [How to Restore](#how-to-restore)
 - [Private Repo URL](#private-repo-url)
-- []
+- [Gitea NPM Package Registry](#gitea-npm-package-registry)
+  - [Add package to Gitea NPM Package Registry](#add-package-to-gitea-npm-package-registry)
+    - [Commands භාවිතයෙන්](#commands-භාවිතයෙන්)
+    - [Config file භාවිතයෙන්](#config-file-භාවිතයෙන්)
+  - [Upadte Package Version](#upadte-package-version)
+  - [Publish Package](#publish-package)
+  - [Download Pacakge](#download-pacakge)
+- [Gitea PyPI Package Registry](#gitea-pypi-package-registry)
+  - [Add package to Gitea PyPI Package Registry](#add-package-to-gitea-pypi-package-registry)
+  - [Build Package](#build-package)
+  - [Publish Package](#publish-package-1)
+  - [Download Pacakge](#download-pacakge-1)
+- [Get Token](#get-token)
+- [Configure Gitea](#configure-gitea)
+
 
 # How to install
 
