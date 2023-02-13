@@ -237,6 +237,10 @@ http://<username>:<taken>@gitea.local/<username>/<project_name>.git
 
 # Gitea NPM Package Registry
 
+<p align="center">
+  <img src="../images/gitea/npm_logo_250x150.png" />
+</p>
+
 ## Add package to Gitea NPM Package Registry
 
 ### Commands භාවිතයෙන්
