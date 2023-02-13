@@ -303,6 +303,10 @@ npm install <package_name>@<version>
 
 # Gitea PyPI Package Registry
 
+<p align="center">
+  <img src="../images/gitea/pypi_logo_250x150.png" />
+</p>
+
 ## Add package to Gitea PyPI Package Registry
 
 home dir එකට ගොස් එහි `.pypirc` නමින් file එකක් සාදා එයට පහත code එක යොදන්න. `<username>` හා `<personal_access_token>` එක replace කිරීමට වගබලා ගන්න.
