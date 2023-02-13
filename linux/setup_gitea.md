@@ -5,6 +5,10 @@
 
 <h1> Gitea for Ubuntu Server 20.04 </h1>
 
+<p align="center">
+  <img src="../images/gitea/gitea_logo_250x170.png" />
+</p>
+
 # Table of Contents
 - [Table of Contents](#table-of-contents)
 - [How to install](#how-to-install)
