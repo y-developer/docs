@@ -33,8 +33,6 @@
   - [Build Package](#build-package)
   - [Publish Package](#publish-package-1)
   - [Download Pacakge](#download-pacakge-1)
-- [Get Token](#get-token)
-- [Configure Gitea](#configure-gitea)
 
 
 # How to install
@@ -362,16 +360,4 @@ twine upload --repository gitea dist/*
 ## Download Pacakge
 ```bash
 pipenv install -i http://gitea.local/api/packages/<username>/pypi/simple <package_name>=<version>
-```
-
-# Get Token
-
-```bash
-curl --header "Content-Type: application/json" --data '{"name":"perpos"}' --user '<username>:<password>' http://gitea.local/api/v1/users/<username>/tokens
-```
-
-# Configure Gitea
-
-```bash
-sudo user=gituser nano /etc/gitea/app.ini
 ```
