@@ -3,11 +3,10 @@
   <img src="../images/gita-logo.png" />
 </p>
 
-# Gitea for Ubuntu Server 20.04
+<h1> Gitea for Ubuntu Server 20.04 </h1>
 
-## Table of Contents
-- [Gitea for Ubuntu Server 20.04](#gitea-for-ubuntu-server-2004)
-  - [Table of Contents](#table-of-contents)
+# Table of Contents
+- [Table of Contents](#table-of-contents)
 - [How to install](#how-to-install)
   - [Prepare Server](#prepare-server)
   - [Create SSH Connection](#create-ssh-connection)
