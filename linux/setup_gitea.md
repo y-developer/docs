@@ -222,7 +222,7 @@ backup file එක Google Drive එකට upload වේ.
 
 # How to Restore
 ```bash
-/usr/local/bin/dorestore.sh <backup_file>
+sudo /usr/local/bin/dorestore.sh <backup_file>
 ```
 
 # Private Repo URL
