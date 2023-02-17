@@ -37,6 +37,12 @@ Recommended fields:- `Section`, `Priority`
 
 for more details [www.debian.org](https://www.debian.org/doc/debian-policy/ch-controlfields.html#binary-package-control-files-debian-control)
 
+## Build debian packages
+```
+dpkg --build <folder_name>
+```
 
-
-
+## Install debian package
+```
+dpkg -i <debian_package>
+```
