@@ -65,3 +65,10 @@ List availble installed oparating systems
 ```bash
 vboxmanage list vms
 ```
+
+## Mount USB Drive to virtual machine
+
+vboxusers යන user group එකට දැනට සිටින user ව add කරන්නන.
+```
+sudo usermod -aG vboxusers <current_username>
+```
