@@ -263,10 +263,12 @@ npm config set registry http://gitea.local/api/packages/<username>/npm/
 echo "//gitea.local/api/packages/<username>/npm/:_authToken=<personal_access_token>" >> ~/.npmrc
 ```
 
-2. Project root එක තුල `.npmrc` file එකක් සාදා එයට `registry=http://gitea.local/api/packages/<username>/npm/` යන line එක යොදන්න. එය යෙදීමේදී `username` එක replace කිරීමට වගබලා ගන්න. නැතහොත් project එකේ root එකේදී පහත command එක භාවිතා කරන්න.
+1. Project root එක තුල `package.json` file එකට පහත element එක add කරන්න. එය යෙදීමේදී `username` එක replace කිරීමට වගබලා ගන්න.
 
-```bash
-echo registry=http://gitea.local/api/packages/<username>/npm/ >> ./.npmrc
+```json
+"publishConfig": {
+	"registry": "http://gitea.local/api/packages/<username>/npm/"
+}
 ```
 
 ## Upadte Package Version
