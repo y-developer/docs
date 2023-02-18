@@ -215,10 +215,17 @@ sudo nano /etc/hosts
 <br>
 
 # How to Backup
+`giteagit` account එකට log වීම. 
+```bash
+sudo su giteagit
+```
+
+Backup shell script එක run කිරීම
+```bash
+/usr/local/bin/dobackup.sh
+```
+
 backup file එක Google Drive එකට upload වේ.
-```
-sudo su giteagit && /usr/local/bin/dobackup.sh
-```
 
 # How to Restore
 ```bash
