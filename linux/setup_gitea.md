@@ -217,7 +217,7 @@ sudo nano /etc/hosts
 # How to Backup
 backup file එක Google Drive එකට upload වේ.
 ```
-/usr/local/bin/dobackup.sh
+sudo su giteagit && /usr/local/bin/dobackup.sh
 ```
 
 # How to Restore
