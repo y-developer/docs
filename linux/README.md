@@ -16,6 +16,7 @@
 [![ssh](../images/ssh-logo.png)](./setup_ssh.md)
 [![gitea](../images/gita-logo.png)](./setup_gitea.md)
 [![cron job](../images/cron-job-logo.png)](./setup_cron_job.md)
+[![cron job](../images/nginx_logo.png)](./nginx_logo.png)
 
 # Package Managers
 [![apt](../images/apt-logo.png)](./apt_guide.md)
