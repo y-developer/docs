@@ -51,5 +51,31 @@ client pc එකේ web browser එකක server එකේ IP address එක typ
 Nginx home page එක host කර ඇත්තේ `/var/www/html` එක තුලයි. ඔබට අවශ්‍ය website එක එය තුලට deploy කරගත හැක.
 
 
+## Port Forwarding
+
+`/etc/nginx/conf.d/` folder එක තුලට යන්න. එයතුල `<example_com>.conf` නමින් file එකක් සාදන්න.
+
+එම file එක පහත ආකාරයට සකස් කරන්න.
+
+```conf
+server {
+    listen 80;
+    server_name <example.com>;
+
+    location / {
+        proxy_set_header   X-Forwarded-For $remote_addr;
+        proxy_set_header   Host $http_host;
+        proxy_pass         "<http://127.0.0.1:8080>";
+    }
+}
+```
+
+මෙහි පහත සදහන් data update කල යුතුය.
+
+`<example.com>` client pc එකේදී භාවිතා වන ip address එක හෝ domain එක  \
+`<http://127.0.0.1:8080>` loopback ip එක අදාල port එක සමග
+
+
+
 
 
