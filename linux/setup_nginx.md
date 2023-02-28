@@ -75,6 +75,43 @@ server {
 `<example.com>` client pc එකේදී භාවිතා වන ip address එක හෝ domain එක  \
 `<http://127.0.0.1:8080>` loopback ip එක අදාල port එක සමග
 
+## Host Multiple Websites
+
+`abc.local` හා `xyz.local` යන domain දෙකට අදාලව website දෙකක් Host කිරීමට අවශ්‍ය යැයි සිතමු. 
+
+- `/var/www/` folder එක තුලට යන්න. එය තුල `abc.local` හා `xyz.local` යන නමින් folders දෙකක සාදන්න.
+- දැන් ඒ folder දෙක තුලට host කිරීමට අවශ්‍ය websites දෙක දමන්න.
+- දැන් `/etc/nginx/conf.d/` folder එක තුලට යන්න. ඒ තුල `abc.local.conf` හා `xyz.local.conf` නමින් file දෙකක් සාදන්න.
+
+පහත configuration සිදුකර ඇත්තේ **http** සදහාය. 
+
+**abc.local.conf** 
+```conf
+server {
+    listen 80;
+    server_name abc.local;
+
+    location / {
+      root /var/www/abc.local/;
+      index index.html;
+    }
+}
+```
+
+**xyz.local.conf**
+```conf
+server {
+    listen 80;
+    server_name xyz.local;
+
+    location / {
+      root /var/www/abc.local/;
+      index index.html;
+    }
+}
+```
+
+
 
 
 
