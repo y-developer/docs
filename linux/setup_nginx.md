@@ -105,7 +105,7 @@ server {
     server_name xyz.local;
 
     location / {
-      root /var/www/abc.local/;
+      root /var/www/xyz.local/;
       index index.html;
     }
 }
