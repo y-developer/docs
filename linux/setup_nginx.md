@@ -111,8 +111,7 @@ server {
 }
 ```
 
-
-
-
-
-
+දැන් nginx service එක restart කරන්න
+```bash
+sudo service nginx restart
+```
