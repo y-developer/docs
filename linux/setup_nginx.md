@@ -115,3 +115,5 @@ server {
 ```bash
 sudo service nginx restart
 ```
+
+website දෙකට අදාලව [client PC එකේ DNS entry දෙකක් add කිරීමට](setup_gitea.md/#client-pc-එකට-dns-entry-එකක්-add-කිරීම) වගබලාගන්න. 
