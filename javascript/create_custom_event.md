@@ -21,6 +21,9 @@ const myEvent = new Event('myevent', {
 
 
 ### CustomEvent constructor එක
+
+මෙහි ඇති විශේෂත්වය වන්නේ event listern එකට data pass කිරීමේ හැකියාවයි.
+
 ```javascript
 const myEvent = new CustomEvent("myevent", {
   detail: {},
