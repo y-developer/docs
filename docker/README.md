@@ -10,13 +10,13 @@ docker info
 
 Pull docker image from `DockerHub`
 ```bash
-docker pull <docker_image_name>
+docker pull <docker_image_name>:<tag>
 ```
 
-Run Docker image\
+Docker image එකක් container එකක් ලෙස run කිරීමට
 මෙහිදී දැනට මේ නමින් image එකක් pc එකේ නොමැති නම් `DockerHub` මගින් image එක pull කරගනී.
 ```bash
-docker run <docker_image_name>
+docker run <docker_image_name>:<tag>
 ```
 
 දැනට run වන containers බලාගැනීමට
@@ -36,10 +36,15 @@ docker images
 
 Start Docker container
 ```bash
-docker start -i <container_id>
+docker start <container_id>
 ```
 
 Delete a Docker image from pc
 ```bash
 docker image rmi -f <image_name>
+```
+
+දැනට run වන docker container එකක terminal එක ලබා ගැනීමට
+```bash
+docker exec -it <container_id> /bin/bash
 ```
