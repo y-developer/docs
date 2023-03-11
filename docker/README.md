@@ -39,6 +39,11 @@ Start Docker container
 docker start <container_id>
 ```
 
+Stop Docker container
+```bash
+docker stop <container_id>
+```
+
 Delete a Docker image from pc
 ```bash
 docker image rmi -f <image_name>
