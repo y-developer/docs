@@ -68,3 +68,33 @@ ssh-copy-id -i ~/.ssh/id_ecdsa.pub gituser@192.168.8.25
 ```
 
 for more infromation https://www.ssh.com/academy/ssh/keygen
+
+## Login to server using SSH
+
+```bash
+ssh -p <port> <username>@<ip_address>
+```
+
+## Copy a file from pc to server using SCP
+
+```bash
+scp -P <port> <local_file_path> <username>@<ip_address>:<destination_path>
+```
+
+## Copy a folder from pc to server using SCP
+
+```bash
+scp -r -P <port> <local_file_path> <username>@<ip_address>:<destination_path>
+```
+
+## Copy a file from server to pc using SCP
+
+```bash
+scp -P <port> <username>@<ip_address>:<destination_path> <local_file_path>
+```
+
+## Copy a folder from server to pc using SCP
+
+```bash
+scp -r -P <port> <username>@<ip_address>:<destination_path> <local_file_path>
+```
