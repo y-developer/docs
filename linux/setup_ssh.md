@@ -67,6 +67,11 @@ ssh-copy-id -i ~/.ssh/<key_name> <user>@<host>
 ssh-copy-id -i ~/.ssh/id_ecdsa.pub gituser@192.168.8.25
 ```
 
+### with port
+```bash
+ssh-copy-id -i ~/.ssh/<key_name> -p <port> <user>@<host>
+```
+
 for more infromation https://www.ssh.com/academy/ssh/keygen
 
 ## Login to server using SSH
