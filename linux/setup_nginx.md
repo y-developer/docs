@@ -75,6 +75,11 @@ server {
 `<example.com>` client pc එකේදී භාවිතා වන ip address එක හෝ domain එක  \
 `<http://127.0.0.1:8080>` loopback ip එක අදාල port එක සමග
 
+දැන් Nginx restart කරන්න.
+```bash
+sudo service nginx restart
+```
+
 ## Host Multiple Websites
 
 `abc.local` හා `xyz.local` යන domain දෙකට අදාලව website දෙකක් Host කිරීමට අවශ්‍ය යැයි සිතමු. 
