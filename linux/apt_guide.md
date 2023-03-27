@@ -92,3 +92,39 @@ To remove unused packages
 ```bash
 sudo apt autoremove
 ```
+
+## Package Repository
+
+### Add Package Repository
+
+Add repository url
+```bash
+sudo add-apt-repository <repository_url>
+```
+
+then, Update package manager
+```bash
+sudo apt update
+```
+
+### Remove Package Repository
+
+Goto following path
+```bash
+cd /etc/apt/sources.list.d
+```
+
+Identify correct `.list` file
+```bash
+ls
+```
+
+Remove that file
+```bash
+sudo rm -f <.list_file_name>
+```
+
+Update package manager
+```bash
+sudo apt update
+```
