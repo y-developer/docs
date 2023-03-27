@@ -51,7 +51,7 @@ client pc එකේ web browser එකක server එකේ IP address එක typ
 Nginx home page එක host කර ඇත්තේ `/var/www/html` එක තුලයි. ඔබට අවශ්‍ය website එක එය තුලට deploy කරගත හැක.
 
 
-## Port Forwarding
+## Reverse Proxy
 
 `/etc/nginx/conf.d/` folder එක තුලට යන්න. එයතුල `<example_com>.conf` නමින් file එකක් සාදන්න.
 
