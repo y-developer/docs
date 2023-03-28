@@ -1,3 +1,6 @@
+#Docker
+
+## Check Version
 Docker version එක බැලීමට 
 ```bash
 docker version
@@ -7,7 +10,9 @@ Check more information about docker
 ```bash
 docker info
 ```
+## Docker Images
 
+### Pull Docker Image
 Pull docker image from `DockerHub`
 ```bash
 docker pull <docker_image_name>:<tag>
@@ -19,6 +24,20 @@ Docker image එකක් container එකක් ලෙස run කිරීම�
 docker run <docker_image_name>:<tag>
 ```
 
+### Check Docker Image Details
+Docker images වල විස්තර බලා ගැනීමට
+```bash
+docker images
+```
+### Delete Docker Image
+Delete a Docker image from pc
+```bash
+docker image rmi -f <image_name>
+```
+
+## Docker Container
+
+### Check Docker Container Details
 දැනට run වන containers බලාගැනීමට
 ```bash
 docker ps
@@ -29,26 +48,28 @@ Containers සියල්ලෙහි විස්තර බලා ගැනී
 docker ps -a
 ```
 
-Docker images වල විස්තර බලා ගැනීමට
+### Docker Image එකක් Docker Container එකක් බවට පත් කිරීමට
 ```bash
-docker images
+docker run <docker_image_name>:<tag>
 ```
 
+### Start Docker Container
 Start Docker container
 ```bash
 docker start <container_id>
 ```
-
+### Stop Docker Container
 Stop Docker container
 ```bash
 docker stop <container_id>
 ```
 
-Delete a Docker image from pc
+### Delete Docker Container
 ```bash
-docker image rmi -f <image_name>
+docker rm <container_id>
 ```
 
+### Go to Inside Docker Container
 දැනට run වන docker container එකක terminal එක ලබා ගැනීමට
 ```bash
 docker exec -it <container_id> /bin/sh
