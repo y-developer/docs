@@ -51,5 +51,10 @@ docker image rmi -f <image_name>
 
 දැනට run වන docker container එකක terminal එක ලබා ගැනීමට
 ```bash
+docker exec -it <container_id> /bin/sh
+```
+or
+
+```bash
 docker exec -it <container_id> /bin/bash
 ```
