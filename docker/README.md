@@ -32,7 +32,7 @@ docker images
 ### Delete Docker Image
 Delete a Docker image from pc
 ```bash
-docker image rmi -f <image_name>
+docker rmi -f <image_name>
 ```
 
 ## Docker Container
