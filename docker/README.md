@@ -73,6 +73,11 @@ Docker container එකක් start කල විට හෝ run කල විට
 docker start <container_id> sleep <sleep_time>
 ```
 
+```bash
+docker run <container_id> sleep <sleep_time>
+```
+මෙහි sleep time එක තත්පර වලින් ලබා දීමේ හැකියාව ඇත.
+
 ### Delete Docker Container
 ```bash
 docker rm <container_id>
