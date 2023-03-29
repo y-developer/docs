@@ -48,7 +48,7 @@ Containers සියල්ලෙහි විස්තර බලා ගැනී
 docker ps -a
 ```
 
-### Docker Image එකකින් Docker Container එකක් සාදා run කිරීම සදහා
+### Docker Image එකකින් Docker Container එකක් සාදා run කිරීම සදහා.
 ```bash
 docker run <docker_image_name>:<tag>
 ```
@@ -65,7 +65,13 @@ docker stop <container_id>
 ```
 
 ### Docker container එකක ජීවන කාලය
-Docker container එකක් start කල විට හෝ run  
+Docker container එකක් start කල විට හෝ run කල විට එයට ජීවත් විය හැක්කේ එහි කාර්යයභාරය අවසන් වන තුරු පමණි.  මේ නිසා බොහෝ Docker containers start කල සැනින් stop වී යයි. මේ නිසා docker container එකක් start කලත් `docker ps` මගින් එය බලාගැනීමට නොහැක. 
+
+මේ නිසා docker container එකකට එය ආරම්භ වන අවස්ථාවේදී `sleep` time එකක් ලබා දිය හැක.  එවිට එම ලබාදෙන කාලය තුල docker container එක live තත්වයේ පවතී.
+
+```bash
+docker start <container_id> sleep <sleep_time>
+```
 
 ### Delete Docker Container
 ```bash
