@@ -18,7 +18,7 @@ Pull docker image from `DockerHub`
 docker pull <docker_image_name>:<tag>
 ```
 
-Docker image එකක් container එකක් ලෙස run කිරීමට
+Docker Image එකකින් Docker Container එකක් සාදා run කිරීම සදහා
 මෙහිදී දැනට මේ නමින් image එකක් pc එකේ නොමැති නම් `DockerHub` මගින් image එක pull කරගනී.
 ```bash
 docker run <docker_image_name>:<tag>
@@ -48,7 +48,7 @@ Containers සියල්ලෙහි විස්තර බලා ගැනී
 docker ps -a
 ```
 
-### Docker Image එකක් Docker Container එකක් බවට පත් කිරීමට
+### Docker Image එකකින් Docker Container එකක් සාදා run කිරීම සදහා
 ```bash
 docker run <docker_image_name>:<tag>
 ```
@@ -63,6 +63,9 @@ Stop Docker container
 ```bash
 docker stop <container_id>
 ```
+
+### Docker container එකක ජීවන කාලය
+Docker container එකක් start කල විට හෝ run  
 
 ### Delete Docker Container
 ```bash
