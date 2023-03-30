@@ -53,6 +53,22 @@ docker ps -a
 docker run <docker_image_name>:<tag>
 ```
 
+#### Termial එක අවහිර නොවන සේ container එකක් run කරගැනීම.
+
+මේ සදහා container එක run කරන අවස්තාවේදී detach mode එක ක්‍රියාත්මක කල යුතුය. මෙය `-d` flag එක මගින් හෝ `--detach` flag එක මගින් සිදුකල හැක.
+
+```bash
+docker run --d <docker_image_name>:<tag>
+```
+
+#### Docker Container එකට නමක් ලබාදීම
+
+container එකට නමක් ලබාදීම සදහා `--name` flag එක භාවිතා කල හැක
+
+```bash
+docker run --name <container_name> <docker_image_name>:<tag>
+```
+
 ### Start Docker Container
 Start Docker container
 ```bash
@@ -93,7 +109,3 @@ or
 ```bash
 docker exec -it <container_id> /bin/bash
 ```
-
-### Termial එක අවහිර නොවන සේ container එකක් run කරගැනීම.
-
-මේ සදහා container එක run කරන අවස්තාවේදී detach mode එක ක්‍රියාත්මක කල යුතුය. මෙය `-d`  `--detach`
