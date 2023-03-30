@@ -93,3 +93,5 @@ or
 ```bash
 docker exec -it <container_id> /bin/bash
 ```
+
+### Termial එක අවහිර ෙනාවන ෙස් 
