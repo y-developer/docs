@@ -94,4 +94,6 @@ or
 docker exec -it <container_id> /bin/bash
 ```
 
-### Termial එක අවහිර ෙනාවන ෙස් 
+### Termial එක අවහිර නොවන සේ container එකක් run කරගැනීම.
+
+මේ සදහා container එක run කරන අවස්තාවේදී detach mode එක ක්‍රියාත්මක කල යුතුය. මෙය `-d`  `--detach`
