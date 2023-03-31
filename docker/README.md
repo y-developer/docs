@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../images/docker-logo-150x150.png" />
+</p>
+
 # Docker Commands
 
 ## docker version
@@ -45,7 +49,7 @@ docker run <container_id> sleep <sleep_time>
 docker run --d <docker_image_name>:<tag>
 ```
 
-### Docker Container එකට නමක් ලබාදීම
+### Docker Container එකට නමක් ලබාදීම.
 
 container එකට නමක් ලබාදීම සදහා `--name` flag එක භාවිතා කල හැක
 
@@ -59,41 +63,50 @@ Docker images වල විස්තර බලා ගැනීමට
 docker images
 ```
 ## docker rmi
-docker image එකක් පරිගණකයෙන් ඉවත් කිරීම සදහා
+Docker image එකක් පරිගණකයෙන් ඉවත් කිරීම සදහා මෙම command එක භාවිතා කරයි.
+
+**සැලකිය යුතුයි:** මෙසේ ඉවත් කිරීමට නම් ඉවත් කිරීමට අදාල Image එකෙන් සාදන ලද docker container කිසිවක්වත් නොතිබිය යුතුය.
+```bash
+docker rmi <image_name>
+```
+
+### Docker images බලන් ඉවත් කිරීම
+ඉවත් කිරීමට අවශ්‍ය image එකෙන් සාදන ලද container( run වන හෝ run නොවන ) පවතී නම්, `--force` හෝ `-f` flag එක මගින් එය සිදුකල හැක. කෙසේවෙතත් මෙහිදී එම image එක මගින් සාදන ලද containers ඉවත් වීමක් සිදු නොවේ.
 ```bash
 docker rmi -f <image_name>
 ```
 
 ## docker ps
 
-### Check Docker Container Details
-දැනට run වන containers බලාගැනීමට
+### දැනට run වන docker container වල විස්තර බලාගැනීමට
 ```bash
 docker ps
 ```
 
-Containers සියල්ලෙහි විස්තර බලා ගැනීමට
+### දැනට run වන සහ run නොවන සියළුම container වල විස්තර බලාගැනීමට
 ```bash
 docker ps -a
 ```
 
 ## docker start
-Start Docker container
+සාදාගන්නා ලද Docker container එකක් start කිරීමට මෙම command එක භාවිතා කරයි. 
 ```bash
 docker start <container_id>
 ```
 ## docker stop
-Stop Docker container
+මෙමගින් දැනට ක්‍රියාත්මක තත්වයේ ඇති docker container එකක් stop කිරීම සිදුකල හැක.
 ```bash
 docker stop <container_id>
 ```
 
 ## docker rm
+Docker container එකක් මකා දැමීමට මෙම command එක භාවිතා කරයි.
 ```bash
 docker rm <container_id>
 ```
 
-## docker exe
+## docker exec
+මෙය භාවිතා කරන්නේ docker container එකක් තුල තමන්ට අවශ්‍ය command එකක් run කරගැනීමටය.
 
 ### Go to Inside Docker Container
 දැනට run වන docker container එකක terminal එක ලබා ගැනීමට
