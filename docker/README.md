@@ -2,6 +2,27 @@
   <img src="../images/docker-logo-150x150.png" />
 </p>
 
+- [Docker Commands](#docker-commands)
+  - [docker version](#docker-version)
+  - [docker info](#docker-info)
+  - [docker pull](#docker-pull)
+  - [docker run](#docker-run)
+    - [Docker container එකක ජීවන කාලය](#docker-container-එකක-ජීවන-කාලය)
+    - [Termial එක අවහිර නොවන සේ container එකක් run කරගැනීම.](#termial-එක-අවහිර-නොවන-සේ-container-එකක්-run-කරගැනීම)
+    - [Docker Container එකට නමක් ලබාදීම.](#docker-container-එකට-නමක්-ලබාදීම)
+    - [Port සැකසීම](#port-සැකසීම)
+  - [docker images](#docker-images)
+  - [docker rmi](#docker-rmi)
+    - [Docker images බලන් ඉවත් කිරීම](#docker-images-බලන්-ඉවත්-කිරීම)
+  - [docker ps](#docker-ps)
+    - [දැනට run වන docker container වල විස්තර බලාගැනීමට](#දැනට-run-වන-docker-container-වල-විස්තර-බලාගැනීමට)
+    - [දැනට run වන සහ run නොවන සියළුම container වල විස්තර බලාගැනීමට](#දැනට-run-වන-සහ-run-නොවන-සියළුම-container-වල-විස්තර-බලාගැනීමට)
+  - [docker start](#docker-start)
+  - [docker stop](#docker-stop)
+  - [docker rm](#docker-rm)
+  - [docker exec](#docker-exec)
+    - [Go to Inside Docker Container](#go-to-inside-docker-container)
+
 # Docker Commands
 
 ## docker version
@@ -46,7 +67,7 @@ docker run <container_id> sleep <sleep_time>
 මේ සදහා container එක run කරන අවස්තාවේදී detach mode එක ක්‍රියාත්මක කල යුතුය. මෙය `-d` flag එක මගින් හෝ `--detach` flag එක මගින් සිදුකල හැක. මෙහිදී container එක background එකෙදී run වීම සිදුවේ.
 
 ```bash
-docker run --d <docker_image_name>:<tag>
+docker run -d <docker_image_name>:<tag>
 ```
 
 ### Docker Container එකට නමක් ලබාදීම.
@@ -56,6 +77,14 @@ container එකට නමක් ලබාදීම සදහා `--name` flag �
 ```bash
 docker run --name <container_name> <docker_image_name>:<tag>
 ```
+
+### Port සැකසීම
+
+container එ ‍ෙ port එකක් host එ‍ක නැත්නම් අ‍ප pc එ‍ක 
+```bash
+docker run -d <host_port>:<container_port> <docker_image_name>:<tag>
+```
+
 
 ## docker images
 Docker images වල විස්තර බලා ගැනීමට
