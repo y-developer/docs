@@ -10,7 +10,7 @@
     - [Docker container එකක ජීවන කාලය](#docker-container-එකක-ජීවන-කාලය)
     - [Termial එක අවහිර නොවන සේ container එකක් run කරගැනීම.](#termial-එක-අවහිර-නොවන-සේ-container-එකක්-run-කරගැනීම)
     - [Docker Container එකට නමක් ලබාදීම.](#docker-container-එකට-නමක්-ලබාදීම)
-    - [Port සැකසීම](#port-සැකසීම)
+    - [Container එකේ Port එකක් Host එකට publish කිරීම](#container-එකේ-port-එකක්-host-එකට-publish-කිරීම)
   - [docker images](#docker-images)
   - [docker rmi](#docker-rmi)
     - [Docker images බලන් ඉවත් කිරීම](#docker-images-බලන්-ඉවත්-කිරීම)
@@ -95,6 +95,7 @@ docker run -p 3000:80 httpd:2.4.56-alpine3.17
 - මෙහි 3000 යනු අපගේ පරිගණකයේ (Host එකේ) post එකයි.
 - මෙහි 80 යනු container එකේ posrt එකයි.
 
+දැන් web brower එකකින් localhost:3000 ‍ට යන්න.
 
 ## docker images
 Docker images වල විස්තර බලා ගැනීමට
