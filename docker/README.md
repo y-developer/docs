@@ -64,6 +64,8 @@ docker run <container_id> sleep <sleep_time>
 
 ### Termial එක අවහිර නොවන සේ container එකක් run කරගැනීම.
 
+සාමාන්‍යයෙන් container එකක් foreground එකේ ක්‍රියාත්මක වීම සිදුවේ. මේ නිසා container ක්‍රියාත්මක කල සැනින් අප වැඩකරමින් සිටින terminal එක block වීම සිදුවේ.
+
 මේ සදහා container එක run කරන අවස්තාවේදී detach mode එක ක්‍රියාත්මක කල යුතුය. මෙය `-d` flag එක මගින් හෝ `--detach` flag එක මගින් සිදුකල හැක. මෙහිදී container එක background එකෙදී run වීම සිදුවේ.
 
 ```bash
