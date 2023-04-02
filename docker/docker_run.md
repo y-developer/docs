@@ -1,8 +1,9 @@
 - [Docker Run](#docker-run)
-  - [Docker container එකක ජීවන කාලය](#docker-container-එකක-ජීවන-කාලය)
-  - [Termial එක අවහිර නොවන සේ container එකක් run කරගැනීම.](#termial-එක-අවහිර-නොවන-සේ-container-එකක්-run-කරගැනීම)
-  - [Docker Container එකට නමක් ලබාදීම.](#docker-container-එකට-නමක්-ලබාදීම)
-  - [Container එකේ Port එකක් Host එකට publish කිරීම](#container-එකේ-port-එකක්-host-එකට-publish-කිරීම)
+  - [Docker container එකක ජීවන කාලය (sleep)](#docker-container-එකක-ජීවන-කාලය-sleep)
+  - [Termial එක අවහිර නොවන සේ container එකක් run කරගැනීම. (`-d`)](#termial-එක-අවහිර-නොවන-සේ-container-එකක්-run-කරගැනීම--d)
+  - [Docker Container එකට නමක් ලබාදීම.(`--name`)](#docker-container-එකට-නමක්-ලබාදීම--name)
+  - [Container එකේ Port එකක් Host එකට publish කිරීම (`-p`)](#container-එකේ-port-එකක්-host-එකට-publish-කිරීම--p)
+  - [Container එක run විය යුත්තේ කුමන Network එකේ දැයි තීරණය කිරීම (`--network`)](#container-එක-run-විය-යුත්තේ-කුමන-network-එකේ-දැයි-තීරණය-කිරීම---network)
 
 # Docker Run
 
@@ -61,7 +62,7 @@ docker run -p 3000:80 httpd:2.4.56-alpine3.17
 දැන් web brower එකකින් localhost:3000 ‍ට යන්න.
 
 ## Container එක run විය යුත්තේ කුමන Network එකේ දැයි තීරණය කිරීම (`--network`)
-Docker host එක තුල `bridge`, `host`, `none` නමින් network තුනක් සාමාන්‍යයෙන් පවතී. මීට අමතරව තමන්ට [කැමති නමකින් network එකක් සාදාගැනීමට](../docker_network.md/)ද හැකියාව ඇත.
+Docker host එක තුල `bridge`, `host`, `none` නමින් network තුනක් සාමාන්‍යයෙන් පවතී. මීට අමතරව තමන්ට [කැමති නමකින් network එකක් සාදාගැනීමට](docker_network.md/#network-එකක්-සෑදීම)ද හැකියාව ඇත.
 
 ```bash
 docker run --network <> <docker_image_name>:<tag>
