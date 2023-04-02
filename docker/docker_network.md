@@ -52,8 +52,6 @@ docker network create --driver <bridge|host|null> --subnet <sub_net> <network_na
 | --scope | Control the network’s scope |
 | --subnet | Subnet in CIDR format that represents a network segment |
 
-## Container එකක් run කි
-
 ## Network එකක් delete කිරීමට
 
 ```bash
