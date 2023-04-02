@@ -32,7 +32,7 @@ docker image tag httpd:2.4.56-alpine3.17 localhost:5001/httpd:2.4.56-alpine3.17
 
 Tag කරගත් image එක push කිරීම
 ```bash
-docker push localhost:5001/httpd::2.4.56-alpine3.17
+docker push localhost:5001/httpd:2.4.56-alpine3.17
 ```
 
 නිවැරදිව push වීම සිදුවූවාදැයි පරික්ෂා කිරීම
