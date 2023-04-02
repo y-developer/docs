@@ -65,5 +65,5 @@ docker run -p 3000:80 httpd:2.4.56-alpine3.17
 Docker host එක තුල `bridge`, `host`, `none` නමින් network තුනක් සාමාන්‍යයෙන් පවතී. මීට අමතරව තමන්ට [කැමති නමකින් network එකක් සාදාගැනීමට](docker_network.md/#network-එකක්-සෑදීම)ද හැකියාව ඇත.
 
 ```bash
-docker run --network <> <docker_image_name>:<tag>
+docker run --network <network_id> <docker_image_name>:<tag>
 ```
