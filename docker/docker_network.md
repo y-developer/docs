@@ -13,15 +13,22 @@ docker network ls
 
 ![Untitled-1](https://user-images.githubusercontent.com/117719820/229348893-20ef9da6-91b7-4cdd-ba69-e32f63a4ea4d.jpg)
 
+## Network එකක විස්තර වැඩිදුරටත් බලාගැනීමට
+
+```bash
+docker network inspect <network_id>
+```
+
+## Network එකක් delete කිරීමට
 
 ```bash
 docker network rm <network_id>
 ```
 
+## භාවිතයක් නොමැති Network සියල්ල ඉවත් කිරීමට
+
 ```bash
 docker network prune
 ```
 
-```bash
-docker network inspect <network_id>
-```
+
