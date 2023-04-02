@@ -1,5 +1,5 @@
 - [Docker Run](#docker-run)
-  - [Docker container එකක ජීවන කාලය (sleep)](#docker-container-එකක-ජීවන-කාලය-sleep)
+  - [Docker container එකක ජීවන කාලය (`sleep <sleep_time>`)](#docker-container-එකක-ජීවන-කාලය-sleep-sleep_time)
   - [Termial එක අවහිර නොවන සේ container එකක් run කරගැනීම. (`-d`)](#termial-එක-අවහිර-නොවන-සේ-container-එකක්-run-කරගැනීම--d)
   - [Docker Container එකට නමක් ලබාදීම.(`--name`)](#docker-container-එකට-නමක්-ලබාදීම--name)
   - [Container එකේ Port එකක් Host එකට publish කිරීම (`-p`)](#container-එකේ-port-එකක්-host-එකට-publish-කිරීම--p)
