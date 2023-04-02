@@ -24,12 +24,15 @@ docker pull httpd:2.4.56-alpine3.17
 
 එම image එක අලුත් registry එක සදහා tag කිරීම
 ```bash
-docker image tag httpd:2.4.56-alpine3.17 localhost:5001/httpd
+docker image tag <SOURCE_IMAGE>:<TAG> <TARGET_IMAGE>:<TAG>
+```
+```bash
+docker image tag httpd:2.4.56-alpine3.17 localhost:5001/httpd:2.4.56-alpine3.17
 ```
 
 Tag කරගත් image එක push කිරීම
 ```bash
-docker push localhost:5001/httpd
+docker push localhost:5001/httpd::2.4.56-alpine3.17
 ```
 
 නිවැරදිව push වීම සිදුවූවාදැයි පරික්ෂා කිරීම
@@ -47,6 +50,6 @@ docker rmi <image_id>
 
 දැන් අලුතින් සාදාගන්නා ලද registry එකෙන් image එක pull කරගන්න
 ```bash
-docker pull localhost:5001/httpd
+docker pull localhost:5001/httpd:2.4.56-alpine3.17
 ```
 
