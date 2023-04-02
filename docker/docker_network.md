@@ -19,6 +19,30 @@ docker network ls
 docker network inspect <network_id>
 ```
 
+## Network එකක් සෑදීම
+
+```bash
+docker network create --driver <bridge|host|null> --subnet <sub_net> <network_name>
+```
+|Name, shorthand|Description|
+|-|-|
+| --attachable | Enable manual container attachment |
+--aux-address | Auxiliary IPv4 or IPv6 addresses used by Network driver |
+--config-from 		The network from which to copy the configuration
+--config-only 		Create a configuration only network
+--driver , -d 	 	Driver to manage the Network (default value = `bridge`)
+--gateway 		IPv4 or IPv6 Gateway for the master subnet
+--ingress 		Create swarm routing-mesh network
+--internal 		Restrict external access to the network
+--ip-range 		Allocate container ip from a sub-range
+--ipam-driver 		IP Address Management Driver
+--ipam-opt 		Set IPAM driver specific options
+--ipv6 		Enable IPv6 networking
+--label 		Set metadata on a network
+--opt , -o 		Set driver specific options
+--scope 		Control the network’s scope
+--subnet 		Subnet in CIDR format that represents a network segment
+
 ## Network එකක් delete කිරීමට
 
 ```bash
