@@ -1,14 +1,14 @@
 # Docker Network
 
 - [Docker Network](#docker-network)
-  - [දැනට docker host එකේ පවතින network මොනවාදැයි බැලීමට](#දැනට-docker-host-එකේ-පවතින-network-මොනවාදැයි-බැලීමට)
-  - [Network එකක විස්තර වැඩිදුරටත් බලාගැනීමට](#network-එකක-විස්තර-වැඩිදුරටත්-බලාගැනීමට)
-  - [Network එකක් සෑදීම](#network-එකක්-සෑදීම)
-  - [Network එකක් delete කිරීමට](#network-එකක්-delete-කිරීමට)
-  - [භාවිතයක් නොමැති Network සියල්ල ඉවත් කිරීමට](#භාවිතයක්-නොමැති-network-සියල්ල-ඉවත්-කිරීමට)
+  - [දැනට docker host එකේ පවතින network මොනවාදැයි බැලීමට (`ls`)](#දැනට-docker-host-එකේ-පවතින-network-මොනවාදැයි-බැලීමට-ls)
+  - [Network එකක විස්තර වැඩිදුරටත් බලාගැනීමට (`inspect`)](#network-එකක-විස්තර-වැඩිදුරටත්-බලාගැනීමට-inspect)
+  - [Network එකක් සෑදීම (`create`)](#network-එකක්-සෑදීම-create)
+  - [Network එකක් delete කිරීමට (`rm`)](#network-එකක්-delete-කිරීමට-rm)
+  - [භාවිතයක් නොමැති Network සියල්ල ඉවත් කිරීමට (`prune`)](#භාවිතයක්-නොමැති-network-සියල්ල-ඉවත්-කිරීමට-prune)
 
 
-## දැනට docker host එකේ පවතින network මොනවාදැයි බැලීමට
+## දැනට docker host එකේ පවතින network මොනවාදැයි බැලීමට (`ls`)
 ```bash
 docker network ls
 ```
@@ -21,13 +21,13 @@ docker network ls
 
 ![Untitled-1](https://user-images.githubusercontent.com/117719820/229348893-20ef9da6-91b7-4cdd-ba69-e32f63a4ea4d.jpg)
 
-## Network එකක විස්තර වැඩිදුරටත් බලාගැනීමට
+## Network එකක විස්තර වැඩිදුරටත් බලාගැනීමට (`inspect`)
 
 ```bash
 docker network inspect <network_id>
 ```
 
-## Network එකක් සෑදීම
+## Network එකක් සෑදීම (`create`)
 
 ```bash
 docker network create --driver <bridge|host|null> --subnet <sub_net> <network_name>
@@ -52,13 +52,13 @@ docker network create --driver <bridge|host|null> --subnet <sub_net> <network_na
 | --scope | Control the network’s scope |
 | --subnet | Subnet in CIDR format that represents a network segment |
 
-## Network එකක් delete කිරීමට
+## Network එකක් delete කිරීමට (`rm`)
 
 ```bash
 docker network rm <network_id>
 ```
 
-## භාවිතයක් නොමැති Network සියල්ල ඉවත් කිරීමට
+## භාවිතයක් නොමැති Network සියල්ල ඉවත් කිරීමට (`prune`)
 
 ```bash
 docker network prune
