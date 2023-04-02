@@ -24,7 +24,7 @@ docker network ls
 ## Network එකක විස්තර වැඩිදුරටත් බලාගැනීමට (`inspect`)
 
 ```bash
-docker network inspect <network_id>
+docker network inspect <network_name_or_id>
 ```
 
 ## Network එකක් සෑදීම (`create`)
@@ -55,7 +55,7 @@ docker network create --driver <bridge|host|null> --subnet <sub_net> <network_na
 ## Network එකක් delete කිරීමට (`rm`)
 
 ```bash
-docker network rm <network_id>
+docker network rm <network_name_or_id>
 ```
 
 ## භාවිතයක් නොමැති Network සියල්ල ඉවත් කිරීමට (`prune`)
