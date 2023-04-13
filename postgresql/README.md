@@ -1,0 +1,107 @@
+<p align="center">
+    <img src="../images/postgresql-150x150.png"/>
+</p>
+<h1 align="center">Postgre SQL</h1>
+
+- [Docker `postgresql` contaienr එක තුල ඇති `psql` shell එකට පිවිසීම](#docker-postgresql-contaienr-එක-තුල-ඇති-psql-shell-එකට-පිවිසීම)
+- [Basic Commands](#basic-commands)
+  - [දැනට ඇති Database වල විස්තර බලාගැනීම](#දැනට-ඇති-database-වල-විස්තර-බලාගැනීම)
+  - [Connection Information බලාගැනීම](#connection-information-බලාගැනීම)
+- [අලුත් Database එකක් සෑදීම.](#අලුත්-database-එකක්-සෑදීම)
+- [දැනට පවතින Database එකක් delete කිරීම](#දැනට-පවතින-database-එකක්-delete-කිරීම)
+- [Commands Inside Database](#commands-inside-database)
+  - [Tables ගැන විස්තර බැලීම](#tables-ගැන-විස්තර-බැලීම)
+  - [Table එකක් සෑදීම](#table-එකක්-සෑදීම)
+  - [Table එකකට දත්ත ඇතුලත් කිරීම.](#table-එකකට-දත්ත-ඇතුලත්-කිරීම)
+  - [Table එකක් තුල පවතින දත්තයන් බැලීම](#table-එකක්-තුල-පවතින-දත්තයන්-බැලීම)
+
+
+
+## Docker `postgresql` contaienr එක තුල ඇති `psql` shell එකට පිවිසීම
+
+දැනට run වන docker container හදුනාගැනීම.
+```bash
+docker ps
+```
+
+අදාල docker container එකට පිවිසීම
+```bash
+docker exec -it <container_id> /bin/sh
+```
+
+`postgres` user account එකට log වීම
+```bash
+su postgres
+```
+
+`psql` shell එකට පිවිසීම
+```bash
+psql
+```
+
+## Basic Commands
+
+### දැනට ඇති Database වල විස්තර බලාගැනීම 
+```psql
+\l
+```
+
+### Connection Information බලාගැනීම
+```psql
+\conninfo
+```
+
+## අලුත් Database එකක් සෑදීම.
+```psql
+CREATE DATABASE <database_name>;
+```
+
+## දැනට පවතින Database එකක් delete කිරීම
+```psql
+
+```
+
+## Commands Inside Database
+
+මේ සදහා පළමුව Database එකකට current user account එකෙන් log වීම සිදුකල යුතුය.
+```psql
+\c <database_name>
+```
+
+### Tables ගැන විස්තර බැලීම
+```psql
+\dt
+```
+
+### Table එකක් සෑදීම
+උදාහරණයක් ලෙස පහත ආකාරයේ table එකක් සාදන ආකාරය බලමු.
+|Field|Type|
+|-|-|
+|ID|SERIAL PRIMARY KEY|
+|name|VARCHAR(255)|
+|email|VARCHAR(255)|
+|age|INT|
+|dob|DATE|
+
+```paql
+CREATE TABLE <table_name> (ID SERIAL PRIMARY KEY, name VARCHAR(255), email VARCHAR(255), age INT, dob DATE);
+```
+
+### Table එකකට දත්ත ඇතුලත් කිරීම.
+
+ඉහත සාදාගත් table එකට පහත දත්තයන් ඇතුලත් කරන ආකාරය බලමු. ID field එක auto generate වේ.
+
+|name|email|age|dob|
+|-|-|-|-|
+|nimal|nimal@example.com|25|1996-02-03|
+|kamal|kamal@example.com|23|1997-08-25|
+|meena|meena@example.com|20|2000-05-15|
+
+```psql
+INSERT INTO <table_name> (name, email, age, dob) VALUES ('nimal', 'nimal@example.com', 25, '1996-02-03'), ('kamal', 'kamal@example.com', 23, '1997-08-25'), ('meena', 'meena@example.com', 20, '2000-05-15');
+```
+
+### Table එකක් තුල පවතින දත්තයන් බැලීම
+```bash
+SELECT * FROM <table_name>;
+```
