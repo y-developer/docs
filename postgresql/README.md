@@ -7,13 +7,15 @@
 - [Basic Commands](#basic-commands)
   - [දැනට ඇති Database වල විස්තර බලාගැනීම](#දැනට-ඇති-database-වල-විස්තර-බලාගැනීම)
   - [Connection Information බලාගැනීම](#connection-information-බලාගැනීම)
-- [අලුත් Database එකක් සෑදීම.](#අලුත්-database-එකක්-සෑදීම)
-- [දැනට පවතින Database එකක් delete කිරීම](#දැනට-පවතින-database-එකක්-delete-කිරීම)
-- [Commands Inside Database](#commands-inside-database)
+- [Databse commands](#databse-commands)
+  - [අලුත් Database එකක් සෑදීම.](#අලුත්-database-එකක්-සෑදීම)
+  - [Database එකක් delete කිරීම.](#database-එකක්-delete-කිරීම)
+- [Table Commands](#table-commands)
   - [Tables ගැන විස්තර බැලීම](#tables-ගැන-විස්තර-බැලීම)
   - [Table එකක් සෑදීම](#table-එකක්-සෑදීම)
   - [Table එකකට දත්ත ඇතුලත් කිරීම.](#table-එකකට-දත්ත-ඇතුලත්-කිරීම)
   - [Table එකක් තුල පවතින දත්තයන් බැලීම](#table-එකක්-තුල-පවතින-දත්තයන්-බැලීම)
+  - [Table එකක් Delete කිරීම](#table-එකක්-delete-කිරීම)
 
 
 
@@ -51,17 +53,18 @@ psql
 \conninfo
 ```
 
-## අලුත් Database එකක් සෑදීම.
+## Databse commands
+### අලුත් Database එකක් සෑදීම.
 ```psql
 CREATE DATABASE <database_name>;
 ```
 
-## දැනට පවතින Database එකක් delete කිරීම
+### Database එකක් delete කිරීම.
 ```psql
-
+DROP DATABASE <database_name>;
 ```
 
-## Commands Inside Database
+## Table Commands
 
 මේ සදහා පළමුව Database එකකට current user account එකෙන් log වීම සිදුකල යුතුය.
 ```psql
@@ -104,4 +107,9 @@ INSERT INTO <table_name> (name, email, age, dob) VALUES ('nimal', 'nimal@example
 ### Table එකක් තුල පවතින දත්තයන් බැලීම
 ```bash
 SELECT * FROM <table_name>;
+```
+
+### Table එකක් Delete කිරීම
+```bash
+DROP TABLE <table_name>;
 ```
