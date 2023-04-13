@@ -7,7 +7,7 @@
 - [Basic Commands](#basic-commands)
   - [දැනට ඇති Database වල විස්තර බලාගැනීම](#දැනට-ඇති-database-වල-විස්තර-බලාගැනීම)
   - [Connection Information බලාගැනීම](#connection-information-බලාගැනීම)
-- [Databse commands](#databse-commands)
+- [Database Commands](#database-commands)
   - [අලුත් Database එකක් සෑදීම.](#අලුත්-database-එකක්-සෑදීම)
   - [Database එකක් delete කිරීම.](#database-එකක්-delete-කිරීම)
 - [Table Commands](#table-commands)
@@ -53,7 +53,7 @@ psql
 \conninfo
 ```
 
-## Databse commands
+## Database Commands
 ### අලුත් Database එකක් සෑදීම.
 ```psql
 CREATE DATABASE <database_name>;
