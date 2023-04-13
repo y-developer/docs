@@ -9,7 +9,7 @@
   - [Connection Information බලාගැනීම](#connection-information-බලාගැනීම)
 - [Database Commands](#database-commands)
   - [අලුත් Database එකක් සෑදීම.](#අලුත්-database-එකක්-සෑදීම)
-  - [Database එකක් delete කිරීම.](#database-එකක්-delete-කිරීම)
+  - [Database එකක් Delete කිරීම.](#database-එකක්-delete-කිරීම)
 - [Table Commands](#table-commands)
   - [Tables ගැන විස්තර බැලීම](#tables-ගැන-විස්තර-බැලීම)
   - [Table එකක් සෑදීම](#table-එකක්-සෑදීම)
@@ -59,7 +59,7 @@ psql
 CREATE DATABASE <database_name>;
 ```
 
-### Database එකක් delete කිරීම.
+### Database එකක් Delete කිරීම.
 ```psql
 DROP DATABASE <database_name>;
 ```
