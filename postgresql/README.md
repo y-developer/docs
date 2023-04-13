@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">Postgre SQL</h1>
 
-- [Docker `postgresql` contaienr එක තුල ඇති `psql` shell එකට පිවිසීම](#docker-postgresql-contaienr-එක-තුල-ඇති-psql-shell-එකට-පිවිසීම)
+- [Docker postgresql contaienr එක තුල ඇති psql shell එකට පිවිසීම](#docker-postgresql-contaienr-එක-තුල-ඇති-psql-shell-එකට-පිවිසීම)
 - [Basic Commands](#basic-commands)
   - [දැනට ඇති Database වල විස්තර බලාගැනීම](#දැනට-ඇති-database-වල-විස්තර-බලාගැනීම)
   - [Connection Information බලාගැනීම](#connection-information-බලාගැනීම)
@@ -19,7 +19,7 @@
 
 
 
-## Docker `postgresql` contaienr එක තුල ඇති `psql` shell එකට පිවිසීම
+## Docker postgresql contaienr එක තුල ඇති psql shell එකට පිවිසීම
 
 දැනට run වන docker container හදුනාගැනීම.
 ```bash
