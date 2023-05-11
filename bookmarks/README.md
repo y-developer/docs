@@ -13,3 +13,4 @@
 |Name|Description|Link|
 |-|-|-|
 |cairo|2D graphics library with support for multiple output devices...|https://gitlab.freedesktop.org/cairo/cairo|
+|ImageMagick|software suite for displaying, converting, and editing raster image and vector image files...|https://github.com/ImageMagick/ImageMagick|
