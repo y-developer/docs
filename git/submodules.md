@@ -2,7 +2,7 @@
 
 [Youtube Tutorial](https://www.youtube.com/watch?v=ZYq3NJnO08U)
 
-## Create Submodule
+## Create Submodule in Locally
 
 Create folder for sub module
 ```bash
