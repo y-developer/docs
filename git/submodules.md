@@ -54,7 +54,7 @@ Added submodule
 git commit -m "add sum module"
 ```
 
-## Create Submodule using Remote Repo (Github, Gitlab)
+## Create Submodule using Remote Repo (Github, Gitlab, ...)
 
 Add remote submodule to main repo
 ```bash
