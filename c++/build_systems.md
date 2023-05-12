@@ -12,6 +12,9 @@ Meson is a modern build system that aims to be fast, easy to use, and cross-plat
 ```bash
 meson --version
 ```
+```bash
+ninja --version
+```
 ### Install meson
 https://mesonbuild.com/SimpleStart.html
 ```bash
