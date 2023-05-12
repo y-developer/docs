@@ -16,9 +16,12 @@ meson --version
 ninja --version
 ```
 ### Install meson
-https://mesonbuild.com/SimpleStart.html
-```bash
+How to install:- https://mesonbuild.com/SimpleStart.html
+Releases:- https://github.com/mesonbuild/meson/releases
 
+Install on Debian, Ubuntu and derivatives
+```bash
+sudo apt install meson ninja-build
 ```
 
 ## Make
