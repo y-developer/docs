@@ -71,10 +71,7 @@ Bazel is a build system developed by Google that is designed to be highly scalab
 **youtube tutorial** :- https://www.youtube.com/watch?v=kLLDzLWzuag
 
 ### Install bazel
-Install on Debian, Ubuntu and derivatives
-```bash
-sudo apt install bazel
-```
+
 
 ## SCons
 SCons is a Python-based build system that uses a SConstruct file to define the build configuration. It supports a variety of build options and targets and is designed to be highly flexible and customizable.
