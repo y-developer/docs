@@ -34,6 +34,15 @@ meson --version
 ```bash
 ninja --version
 ```
+### Create meson.build file
+
+### Build with meson
+```bash
+meson build
+```
+```bash
+ninja -C build <project_c>
+```
 
 ## Make
 Make is a classic build system that is widely used for building C++ libraries. It uses Makefile files to define the build configuration and supports a variety of build options and targets.
