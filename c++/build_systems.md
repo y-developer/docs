@@ -81,3 +81,7 @@ Install on Debian, Ubuntu and derivatives
 ```bash
 sudo apt install scons
 ```
+Check scons version
+```bash
+scons --version
+```
