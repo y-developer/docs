@@ -8,6 +8,10 @@ Install on Debian, Ubuntu and derivatives
 ```bash
 sudo apt install cmake
 ```
+Check cmake version
+```bash
+cmake --version
+```
 
 ## Meson
 Meson is a modern build system that aims to be fast, easy to use, and cross-platform. It supports a wide range of programming languages, including C++, and uses meson.build files to define the build configuration.
