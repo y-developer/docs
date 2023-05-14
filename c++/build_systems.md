@@ -55,7 +55,9 @@ cd builddir
 ```
 meson compile
 ```
-සැලකිය යුතුයි මෙම command එක ලබා දිය හැක්කේ v0.55.0 සහ ඊට පසු version සදහායි. v0.55.0 ට පෙර version එකක් නම් `ninja` යන command එක භාවිතා කරන්න.
+*සැලකිය යුතුයි මෙම command එක ලබා දිය හැක්කේ v0.55.0 සහ ඊට පසු version සදහායි. v0.55.0 ට පෙර version එකක් නම් `ninja` යන command එක භාවිතා කරන්න.*
+
+
 
 ## Make
 Make is a classic build system that is widely used for building C++ libraries. It uses Makefile files to define the build configuration and supports a variety of build options and targets.
