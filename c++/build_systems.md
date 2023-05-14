@@ -43,13 +43,19 @@ executable('abc', 'main.cpp')
 ```
 
 ### Build with meson
+පළමුව build එක initialize කරගත යුතුය. මේ සදහා `meson.build`file එක ඇති directory එකට ගොස් පහත command එක ලබා දෙන්න.
 ```bash
 meson setup builddir
 ```
+දැන් `builddir` නමින් folder එකක් සෑදී ඇත. පළමුව එම folder එක තුලට යන්න.
 ```bash
 cd builddir
+```
+ඉන්පසුව පහත command එක ලබා දෙන්න.
+```
 meson compile
 ```
+සැලකිය යුතුයි මෙම command එක ලබා දිය හැක්කේ v0.55.0 සහ ඊට පසු version සදහායි. v0.55.0 ට පෙර version එකක් නම් `ninja` යන command එක භාවිතා කරන්න.
 
 ## Make
 Make is a classic build system that is widely used for building C++ libraries. It uses Makefile files to define the build configuration and supports a variety of build options and targets.
