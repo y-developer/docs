@@ -35,6 +35,12 @@ meson --version
 ninja --version
 ```
 ### Create meson.build file
+meson.build ‌file එකකට උදාහරණයක් පහත දැක්වේ.
+```meson
+[binaries]
+project('abc', 'cpp')
+executable('abc', 'main.cpp')
+```
 
 ### Build with meson
 ```bash
