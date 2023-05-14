@@ -44,10 +44,11 @@ executable('abc', 'main.cpp')
 
 ### Build with meson
 ```bash
-meson build
+meson setup builddir
 ```
 ```bash
-ninja -C build <project_c>
+cd builddir
+meson compile
 ```
 
 ## Make
