@@ -16,6 +16,48 @@ Run executable file
 ## Clang
 A C, C++, and Objective-C compiler developed by the LLVM(Low-Level Virtual Machine) Project. Known for its fast compile times and detailed error messages.
 
+## Emscripten
+An open-source compiler toolchain that allows you to compile C and C++ code into JavaScript and WebAssembly, which can then be run in a web browser or other JavaScript runtime environment.
+
+**official website** :- https://emscripten.org/
+
+### Install Emscripten
+**Install on Linux systems**
+
+Go to home directory
+```bash
+cd ~
+```
+Get the emsdk repo
+```bash
+git clone https://github.com/emscripten-core/emsdk.git .emscripten
+```
+
+Enter that directory
+```bash
+cd ./.emscripten
+```
+
+Download and install the latest SDK tools
+```bash
+./emsdk install latest
+```
+
+Make the "latest" SDK "active" for the current user. (writes .emscripten file)
+```bash
+./emsdk activate latest
+```
+
+Activate PATH and other environment variables in the terminal
+```bash
+echo 'source /home/<user_name>/.emscripten/emsdk_env.sh' >> ~/.bashrc
+```
+
+Open the new terminal and verify that the installation is correct.
+```bash
+emcc -v
+```
+
 ## Microsoft Visual C++
 A proprietary C++ compiler developed by Microsoft as part of Visual Studio, a popular integrated development environment (IDE) for Windows.
 
