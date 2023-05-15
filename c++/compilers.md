@@ -57,6 +57,14 @@ Open the new terminal and verify that the installation is correct.
 ```bash
 emcc -v
 ```
+### Build for nodejs
+```bash
+emcc main.cpp
+```
+මෙහිදී `a.out.js` හා `a.out.wasm` යනුවෙන් files දෙකක් සෑදේ. මෙහි ඇති `a.out.js` යන file එක පහත පරිදි nodejs මගින් run කරගත හැක.
+```bash
+node a.out.js
+```
 
 ## Microsoft Visual C++
 A proprietary C++ compiler developed by Microsoft as part of Visual Studio, a popular integrated development environment (IDE) for Windows.
