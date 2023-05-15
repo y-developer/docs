@@ -57,11 +57,23 @@ Open the new terminal and verify that the installation is correct.
 ```bash
 emcc -v
 ```
-### Build for nodejs
+### Compilling
+#### Compile for Nodejs
+`main.cpp` යන main function එක ඇති c++ file එක පහත පරිදි nodejs සදහා compile කරගත හැක.
 ```bash
 emcc main.cpp
 ```
 මෙහිදී `a.out.js` හා `a.out.wasm` යනුවෙන් files දෙකක් සෑදේ. මෙහි ඇති `a.out.js` යන file එක පහත පරිදි nodejs මගින් run කරගත හැක.
+```bash
+node a.out.js
+```
+
+#### Compile for Web
+`main.cpp` යන main function එක ඇති c++ file එක පහත පරිදි html file එකක් ලෙස compile කරගත හැක.
+```bash
+emcc main.cpp -o hello.html
+```
+මෙහිදී `hello.html`, `hello.js` හා `hello.wasm` යනුවෙන් files තුනක් සෑදේ. මෙහි ඇති `hello.html` file එක web browser එකක් මගින් open කරගත හැක.
 ```bash
 node a.out.js
 ```
