@@ -1,9 +1,21 @@
-# C++ compilers
+# C / C++ compilers
 
 ## GCC (GNU Compiler Collection)
 A widely used open-source compiler that supports C, C++, and other programming languages.
 
-Compile code using the g++
+### C Codes
+Compile using the gcc
+```bash
+gcc -o <executable_name> <source_file>.c
+```
+
+Run executable file
+```bash
+./<executable_name>
+```
+
+### C++ Codes
+Compile using the g++
 ```bash
 g++ -o <executable_name> <source_file>.cpp
 ```
