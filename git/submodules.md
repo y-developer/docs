@@ -70,3 +70,28 @@ Added submodule
 ```bash
 git commit -m "add sum module"
 ```
+
+## Create submodule for specific tag
+
+Submodule එක සෑදීමෙන් පසුව එම Submodule තුලට යන්න.
+```bash
+cd <sub_module_name>
+```
+
+අවශ්‍ය tag එකට checkout වෙන්න.
+```bash
+git checkout <tag_name>
+```
+
+නැවත ප්‍රධාන project folder එකට පැමිණෙන්න.
+```bash
+cd ..
+```
+
+සිදුකල changes statge කර commit කරන්න.
+```bash
+git add .
+```
+```bash
+git commit -m "change submodule version"
+```
