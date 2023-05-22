@@ -95,3 +95,15 @@ git add .
 ```bash
 git commit -m "change submodule version"
 ```
+
+## Submodules සහිත Repo එකක් Clone කිරීම.
+
+### Submodules සමග එක විට repo එක clone කිරීම.
+```bash
+git clone --recursive <git_repo_remote_url>
+```
+
+### ප්‍රධාන repo එක clone කර පසුව submodules clone කිරීම.
+```bash
+git submodule update --init --recursive
+```
