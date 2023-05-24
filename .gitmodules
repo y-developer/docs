@@ -1,0 +1,3 @@
+[submodule "c++/cmake-examples"]
+	path = c++/cmake-examples
+	url = https://github.com/appzicpvt/cmake-examples.git
