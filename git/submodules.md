@@ -66,9 +66,9 @@ Git add .gitmodules file sub_module
 git add .
 ```
 
-Added submodule 
+Added submodule
 ```bash
-git commit -m "add sum module"
+git commit -m "add submodule"
 ```
 
 ## Create submodule for specific tag
