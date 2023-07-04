@@ -26,6 +26,11 @@ SHOW TABLES;
 SHOW COLUMNS FROM <table එකේ නම>;
 ```
 
+## Database එකක් delete කිරීම සදහා
+```sql
+DROP DATABASE;
+```
+
 ## MySQ server එකෙන් exit වීමට
 ```sql
 exit
