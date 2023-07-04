@@ -27,8 +27,9 @@ SHOW COLUMNS FROM <table එකේ නම>;
 ```
 
 ## Database එකක් delete කිරීම සදහා
+`සැ.යු.` මෙය සිදු කිරීමට Database එකක් select වී නොතිබිය යුතුය.
 ```sql
-DROP DATABASE;
+DROP DATABASE <database එකේ නම>;
 ```
 
 ## MySQ server එකෙන් exit වීමට
