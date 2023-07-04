@@ -5,12 +5,12 @@
 mysql -u <username> -p
 ```
 
-## දැනට ඇති Databases මොනවාදැයි බැලීමට
+## දැනට ඇති databases මොනවාදැයි බැලීමට
 ```sql
 SHOW DATABASES;
 ```
 
-## Database එකක් Select කිරීමට
+## Database එකක් select කිරීමට
 ```sql
 USE <database එකේ නම>;
 ```
