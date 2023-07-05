@@ -1,4 +1,4 @@
-# git checkout
+# Git Checkout
 
 ## Remote branch එකකට checkout වීම
 
