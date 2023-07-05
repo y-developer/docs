@@ -1,4 +1,4 @@
-# Git Sub Modules
+# Git Submodules
 
 [Youtube Tutorial](https://www.youtube.com/watch?v=ZYq3NJnO08U)
 
