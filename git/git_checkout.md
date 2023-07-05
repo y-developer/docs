@@ -1,4 +1,6 @@
-# Remote branch එකකට checkout වීම
+# git checkout
+
+## Remote branch එකකට checkout වීම
 
 ```bash
 git checkout -b <branch-a> origin/<branch-a>
