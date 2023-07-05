@@ -1,4 +1,4 @@
-# git reset
+# Git Reset
 
 ## අවශ්‍ය git hash එකකට repo එක reset කිරීම
 ```bash
