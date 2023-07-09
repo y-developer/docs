@@ -48,6 +48,11 @@ SHOW TABLES;
 SHOW COLUMNS FROM <table එකේ නම>;
 ```
 
+### Table එකක ඇති data මොනවාදැයි බැලීමට
+```sql
+SELECT * FROM <table එකේ නම>;
+```
+
 ### Table එකක් delete කිරීම
 ```sql
 DROP TABLE <table එකේ නම>;
