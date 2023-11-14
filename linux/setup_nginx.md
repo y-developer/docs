@@ -75,6 +75,20 @@ server {
 `<example.com>` client pc එකේදී භාවිතා වන ip address එක හෝ domain එක  \
 `<http://127.0.0.1:8080>` loopback ip එක අදාල port එක සමග
 
+උදාහරණයක් ලෙස
+```conf
+server {
+    listen       3000;
+    server_name  vecpad_frontend;
+
+    location / {
+        proxy_set_header   X-Forwarded-For $remote_addr;
+        proxy_set_header   Host $http_host;
+        proxy_pass         http://127.0.0.1:3000;
+    }
+}
+```
+
 දැන් Nginx restart කරන්න.
 ```bash
 sudo service nginx restart
