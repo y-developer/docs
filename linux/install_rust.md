@@ -10,6 +10,11 @@ https://www.rust-lang.org/learn/get-started
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
+# Check rust version
+```sh
+rustc --version
+```
+
 # Downgrade rust in older version
 උදාහරණයක් ලෙස rust version එක 1.41.0 ට downgrade කිරීමට අවශ්‍ය නම්
 ```sh
