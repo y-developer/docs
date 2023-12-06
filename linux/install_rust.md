@@ -9,3 +9,13 @@ https://www.rust-lang.org/learn/get-started
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
+
+# Downgrade rust in older version
+උදාහරණයක් ලෙස rust version එක 1.41.0 ට downgrade කිරීමට අවශ්‍ය නම්
+```sh
+rustup install 1.41.0
+```
+පසුව
+```sh
+cargo +1.41.0 run
+```
