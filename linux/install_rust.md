@@ -20,7 +20,7 @@ rustc --version
 ```sh
 rustup install 1.41.0
 ```
-පසුව
+අදාල version එකෙන් project එක run කිරීම සදහා
 ```sh
 cargo +1.41.0 run
 ```
