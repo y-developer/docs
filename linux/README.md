@@ -6,7 +6,8 @@
 [![virtualbox](../images/virtualbox-logo.png)](./install_virtualbox.md)
 [![nodejs](../images/nodejs-logo.png)](./install_nodejs.md)
 [![python](../images/python-logo.png)](./install_python.md)
-[![python](../images/docker-logo.png)](./install_docker.md)
+[![docker](../images/docker-logo.png)](./install_docker.md)
+[![rust](../images/rust-logo.png)](./install_rust.md)
 
 # How to Configure
 [![set time](../images/time-logo.png)](./set_time.md)
