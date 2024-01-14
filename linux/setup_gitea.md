@@ -33,7 +33,7 @@
 
 ## Prepare Server
 
-පළමුව `gitea.zip` file එක extract කරගන්න.
+පළමුව `gitea.zip` file එක extract කරගන්න. (එය D:/SOFTWARE හි ඇත.)
 
 එහි වූ `os folder` එකට ගොස් `ubuntu-20.04.5-live-server-amd64.iso` file එක ගෙන එය server එකට install කරගන්න. Install කිරීමේදී පහත තොරතුරු ලබාදෙන්න.
 
