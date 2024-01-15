@@ -6,7 +6,7 @@
 [![virtualbox](../images/virtualbox-logo.png)](./install_virtualbox.md)
 [![nodejs](../images/nodejs-logo.png)](./install_nodejs.md)
 [![python](../images/python-logo.png)](./install_python.md)
-[![docker](../images/docker-logo.png)](./install_docker.md)
+[![docker](../images/docker-logo.png)](../docker/install_docker.md)
 [![rust](../images/rust-logo.png)](./install_rust.md)
 
 # How to Configure
