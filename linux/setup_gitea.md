@@ -37,8 +37,16 @@
 
 එහි වූ `os folder` එකට ගොස් `ubuntu-20.04.5-live-server-amd64.iso` file එක ගෙන එය server එකට install කරගන්න. Install කිරීමේදී පහත තොරතුරු ලබාදෙන්න.
 
-**server name :** `gitlocal`\
+**server name :** `serv3`\
 **username :** `gituser`
+
+## Setup Network Connection
+පහත ආකාරයට network connection එක setup කරගන්න.
+Subnet: `192.168.8.0/24`\
+Address: `192.168.8.3`\
+Gateway: `192.168.8.1`\
+Name servers: `8.8.8.8, 8.8.4.4`\
+Search domains: `gitea.local, pw.local`\
 
 OS එක install වීමෙන් පසුව username එක හා password එක දී server එකට ලොග් වෙන්න.
 
