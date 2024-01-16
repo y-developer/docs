@@ -220,6 +220,8 @@ sudo nano /etc/hosts
 
 > 192.168.8.253 gitea.local
 
+Windows හි මෙම hosts file එක පිහිටා ඇත්තේ `C:\Windows\System32\drivers\etc` ය. එය ඉහත පරිදිම edit කරන්න.
+
 <br>
 
 # How to Backup
