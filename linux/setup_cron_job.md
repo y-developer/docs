@@ -26,6 +26,8 @@ current user ට අදාලව අවුරුද්දේ සෑම දින
 20 18 * * * /usr/bin/echo "this is my content" > /home/yasitha/test.txt
 ```
 
+`**NOTE: cron job එකක් හෝ cron job එකකට අදාල shell script එකක් ලිවීමේදී සෑම විටම absolute path පමණක් භාවිතා කිරීමට වගබලා ගන්න.**`
+
 ## for other user
 
 වෙනත් user කෙනෙක් සදහා cron job එකක් assign කිරීම.
