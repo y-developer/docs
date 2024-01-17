@@ -8,15 +8,9 @@ Open cron tab file
 ```bash
 cat /etc/crontab
 ```
-
-Get list of Cron Jobs
-```bash
-crontab -l
-```
+![crontab info](../images/crontab/crontab-info.png)
 
 # How to make cron job using -e
-
-![crontab info](../images/crontab/crontab-info.png)
 
 ## for current user
 
@@ -39,6 +33,18 @@ current user ට අදාලව අවුරුද්දේ සෑම දින
 මෙයද මුල් වතා වේ භාවිතා කරන විට text editor එක කුමක් භාවිතා කල යුතුදැයි අසයි. එයට nano text editor එක ලබා දීම වඩා පහසු වේ. 
 ```bash
 sudo crontab -u <user> -e
+```
+
+# Show list cron jobs using -l
+
+## for current user
+```bash
+crontab -l
+```
+
+## for other user
+```bash
+sudo crontab -u <user> -l
 ```
 
 # File එකක් භාවිතයෙන් cronjob එකක් සෑදීම
