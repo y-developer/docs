@@ -16,6 +16,13 @@ lsblk
 
 මෙම `sda`, `sda1`, `sda2`, `sda3`, `sdf`, `sdf1` යන ඒවා පවතින්නේ  `/dev/` folder එක තුල file ලෙසිනි. `/dev/` එක තුල ඇත්තේ system එකේ devices වල නිරූපණයන් වේ.
 
+පහත command මගින් එහි වැඩි විස්තර බලාගත හැක.
+```bash
+lsblk -f
+```
+
+![](./images/lsblk-result-more.JPG)
+
 ## Disk එකක් mount කිරීම
 පළමුව disk එක mount කිරීමට ස්ථානයක් තෝරාගත යුතුය. මේ සදහා සාමාන්‍යයෙන් භාවිතා කල යුතු වන්නේ `/mnt/` හෙවත් mount folder එක හෝ `/media/` folder එක වේ.
 
@@ -39,3 +46,13 @@ sudo mount /dev/sdf1 /media/disk1/
 ```bash
 sudo umount /media/disk1/
 ```
+
+## Disk එකක් Format කිරීම
+```bash
+sudo mkfs -t <type_එක> /dev/<partition_එක>
+```
+
+type එක සදහා `ext4` හෝ `vfat` හෝ `ntfs` යන්න ලබාදිය හැක.\
+*මෙහි vfat යනු FAT32 යන්නයි.
+
+disk එකක් fomat කිරීමේදී එය mount වී නොතිබිය යුතුය.
