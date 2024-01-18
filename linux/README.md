@@ -25,5 +25,3 @@
 [![snapcraft](../images/snapcraft_logo.png)](./snapcraft_guide.md)
 [![dpkg](../images/deb-package-logo.png)](./dpkg_guide.md)
 
-# How to
-
