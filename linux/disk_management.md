@@ -23,11 +23,10 @@ lsblk -f
 
 ![](./images/lsblk-result-more.JPG)
 
-## Disk එකක් mount කිරීම
-පළමුව disk එක mount කිරීමට ස්ථානයක් තෝරාගත යුතුය. මේ සදහා සාමාන්‍යයෙන් භාවිතා කල යුතු වන්නේ `/mnt/` හෙවත් mount folder එක හෝ `/media/` folder එක වේ.
+## Disk එකක් තාවකාලිකව mount කිරීම
 
-disk එක mount කරන්නේ ස්ථීරව නම් ඒ සදහා `/mnt/` folder එකත්, \
-disk එක mount කරන්නේ තාවකාලිකව නම් ඒ සදහා `/media/` folder එකත් යොදාගනු ලබයි.
+සාමාන්‍යයෙන් තාවකාලිකව mount කරන්නේ USB Flash drive ආදියයි.\
+පළමුව disk එක mount කිරීමට ස්ථානයක් තෝරාගත යුතුය. මේ සදහා ඹ්නෑම ස්ථානයක් තෝරාගත හැකි වුවද, තාවකාලික mount කිරීමක් සදහා බොහෝවිට භාවිතා කල යුතු වන්නේ `/media/` folder එකයි.
 
 උදාහරණයක් ලෙස `/media/` folder එකට `disk1` යනුවෙන් `sdf1` partition mount කිරීම සලකා බලමු.
 
@@ -41,11 +40,41 @@ sudo mkdir /media/disk1
 sudo mount /dev/sdf1 /media/disk1/
 ```
 
+## Disk එකක් ස්ථීරව mount කිරීම.
+සාමාන්‍යයෙන් ස්ථීරව mount කරනු ලබන්නේ sata මගින් සම්බන්ධ කර ඇති hard drive වේ.\
+පළමුව disk එක mount කිරීමට ස්ථානයක් තෝරාගත යුතුය. මේ සදහා ඹ්නෑම ස්ථානයක් තෝරාගත හැකි වුවද, ස්ථීර mount කිරීමක් සදහා බොහෝවිට භාවිතා කල යුතු වන්නේ `/mnt/` folder එකයි.
+
+උදාහරණයක් ලෙස `/mnt/` folder එකට `disk1` යනුවෙන් `sdf1` partition mount කිරීම සලකා බලමු.
+
+පළමුව mnt folder එක තුල `disk1` යනුවෙන් folder එකක් සාදාගත යුතුය.
+```bash
+sudo mkdir /mnt/disk1
+```
+
+දැන් `/etc/fstab` file එක edit කල යුතුය. ඒ සදහා `/etc/fstab` file එක nano editor එකෙන් open කරගන්න.
+```bash
+sudo nano /etc/fstab
+```
+
+දැන් එයට පහත සදහන් line එක add කර save කරන්න
+```txt
+UUID=<uuid_එක> /mnt/disk1 <type_එක> defaults 0 2
+```
+uuid එක හා file type එක දැන ගැනීමට `lsblk -f` භාවිතා කරන්න.
+
+දැන් mount කිරීම සිදුකරන්න.
+```bash
+sudo mount -a
+```
+
+දැන් system එක reboot කරන්න. reboot කිරීම පෙර සහ පසු `lsblk -f` භාවිතයෙන් ස්ථීර mount කිරීම නිවැරදිව සිදුවී ඇති දැයි දැනගන්න.
+
 ## Disk එකක් unmount කිරීම
 දැන් mount කරගත් `sdf1` unmount කරගන්නා ආකාරය සලකා බලමු.
 ```bash
 sudo umount /media/disk1/
 ```
+
 
 ## Disk එකක් Format කිරීම
 ```bash
