@@ -14,3 +14,4 @@
 
 # Docker Compose
 [![How to Intall Docker Compose in Ubuntu](../images/docker-compose-install-linux-icon.jpg)](./install_docker_compose.md)
+[![How to Intall Docker Compose in Ubuntu](../images/docker-compose-commands-icon.jpg)](./docker_compose_commands.md)
