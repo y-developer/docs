@@ -15,6 +15,11 @@ docker compose file එකක් run කිරීමට පහත command එක
 ```bash
 docker compose up
 ```
+
+මේ ආකාරයට docker compose up කල විට console එක ඒ ඒ container එකේ logs වලින් block වීම සිදුවේ. එසේ සිදු නොවීමට නම් ඉහත command එක පහත ආකාරයෙන් `detached mode` එකේ run කිරීම සිදු කල යුතුය.
+```bash
+docker compose up -d
+```
 ## docker compose down
 මෙහිදී docker compose file එක මගින් සකස් කර ගන්නා ලද සියළු containers, network, volumes ආදිය delete වීම සිදුවේ. *(docker rm වලට සමාන ක්‍රියාවලියකි.)*
 ```bash
