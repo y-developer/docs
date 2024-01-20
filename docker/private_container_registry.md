@@ -22,7 +22,7 @@ Tag කරගත් image එක push කිරීම
 docker push docker.local/httpd:2.4.56-alpine3.17
 ```
 
-### අලුත්නි image එකක් build කරන විට
+### අලුතින් image එකක් build කරන විට
 
 docker image එකක් build කිරීමේදී පහත පරිදි tag එක සැකසිය හැක.
 ```bash
