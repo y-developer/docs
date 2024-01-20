@@ -1,19 +1,8 @@
 # How to create a private container registry
 
-## Docker container registry එකක් සාදන ආකාරය
-
-Docker Hub තුල `registry` container එකක් සෑදීම සදහා registry නම් image එක pull කරගත හැක.
-```bash
-docker pull registry:2.8
-```
-
-Registry image එක මගින් container එකක් run කර ගැනීම.
-```bash
-docker run -d -p 5001:5000 --restart always registry:2.8
-```
-[why --restart always](https://docs.docker.com/config/containers/start-containers-automatically/)
-
 ## එම Registry එක තුලට image එකක් push කරන ආකාරය.
+
+### Docker hub එකේ ඇති image එකක් local registry එකට push කිරීම.
 
 උදාහරණයක් ලෙස `httpd:2.4.56-alpine3.17` image එක dockerhub එකෙන් pull කරගෙන එය අලුතින් සාදාගන්නා ලද registry එකට push කර ගන්නා අකාරය සලකා බලමු.
 
@@ -23,33 +12,37 @@ docker pull httpd:2.4.56-alpine3.17
 ```
 
 එම image එක අලුත් registry එක සදහා tag කිරීම
+
 ```bash
-docker image tag <SOURCE_IMAGE>:<TAG> <TARGET_IMAGE>:<TAG>
-```
-```bash
-docker image tag httpd:2.4.56-alpine3.17 localhost:5001/httpd:2.4.56-alpine3.17
+docker tag httpd:2.4.56-alpine3.17 docker.local/httpd:2.4.56-alpine3.17
 ```
 
 Tag කරගත් image එක push කිරීම
 ```bash
-docker push localhost:5001/httpd:2.4.56-alpine3.17
+docker push docker.local/httpd:2.4.56-alpine3.17
 ```
 
-නිවැරදිව push වීම සිදුවූවාදැයි පරික්ෂා කිරීම
+### අලුත්නි image එකක් build කරන විට
+
+docker image එකක් build කිරීමේදී පහත පරිදි tag එක සැකසිය හැක.
 ```bash
-curl -X GET localhost:5001/v2/_catalog
+docker build -t docker.local/<image_එකේ_නම>:<tag> .
 ```
 
-## එම Registry එක තුලින් image එකක් pull කර ගන්නා ආකාරය.
+පසුව සුපුරුදු පරිදි එය push කල හැක.
+```bash
+docker push docker.local/image_එකේ_නම>:<tag>
+```
+
+## Registry එකේ පවතින Images මොනවාදැයි බැලීමට
+`docker.local/v2/_catalog` භාවිතා කරන්න.
+
+
+## එම registry එක තුලින් image එකක් pull කර ගන්නා ආකාරය.
 කලින් උදාහරණයේ push කර ගන්නා ලද image එක දැන් pull කරමු.
-
-මුලින්ම දැනට පරිගණකයේ ඇති `httpd:2.4.56-alpine3.17` image එක delete කරන්න
-```bash
-docker rmi <image_id>
-```
 
 දැන් අලුතින් සාදාගන්නා ලද registry එකෙන් image එක pull කරගන්න
 ```bash
-docker pull localhost:5001/httpd:2.4.56-alpine3.17
+docker pull docker.local/<image_එකේ_නම>:<tag>
 ```
 
