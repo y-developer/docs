@@ -18,7 +18,8 @@
 [![gitea](../images/gita-logo.png)](./setup_gitea.md)
 [![cron job](../images/cron-job-logo.png)](./setup_cron_job.md)
 [![cron job](../images/nginx_logo.png)](./setup_nginx.md)
-[![Disk Management](../images/disk_management_logo.jpg)](./disk_management.md)
+[![Disk management](../images/disk_management_logo.jpg)](./disk_management.md)
+[![User and group management](../images/user_and_group_management.png)](./user_and_group_management.md)
 
 # Package Managers
 [![apt](../images/apt-logo.png)](./apt_guide.md)
