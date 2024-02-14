@@ -4,7 +4,7 @@
 
 # Docker
 [![How to Intall Docker in Ubuntu](../images/docker-install-linux-icon.jpg)](./install_docker.md)
-[![Docker without sudo](../images/docker-without-sudo-icon.jpg)](./install_docker.md)
+[![Docker without sudo](../images/docker-without-sudo-icon.jpg)](./docker_root_privilege.md)
 [![Docker Run](../images/docker-basic-commands-icon.jpg)](./docker_commands.md)
 [![Docker Run](../images/docker-run-icon.jpg)](./docker_run.md)
 [![Docker network](../images/docker-network-icon.jpg)](./docker_network.md)
