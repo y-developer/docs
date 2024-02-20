@@ -7,4 +7,4 @@
 [![Google API](./images/google-api-150x150.png)](./google_api/)
 [![Bookmarks](./images/bookmarks-logo-150x150.png)](./bookmarks/)
 [![Docker](./images/docker-logo-150x150.png)](./docker/)
-[![Postgre SQL](./images/postgresql-150x150.png)](./postgresql/)
+[![Postgre SQL](./images/postgresql-150x150.png)](./Databases/postgresql.md)
