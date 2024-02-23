@@ -96,6 +96,11 @@ git add .
 git commit -m "change submodule version"
 ```
 
+## Remove git submodule
+```bash
+git rm <path-to-submodule>
+```
+
 ## Submodules සහිත Repo එකක් Clone කිරීම.
 
 ### Submodules සමග එක විට repo එක clone කිරීම.
