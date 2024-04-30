@@ -2,7 +2,16 @@
   <img src="../images/docker-logo.png" />
 </p>
 
+
+
 # Install Docker on Ubuntu 22.04
+
+## Install Instant
+```bash
+sh docs/docker/install.sh
+```
+
+## Install Steps
 
 Update system
 
