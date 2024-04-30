@@ -7,6 +7,12 @@ Display one or many resources
 kubectl get <resource_type>
 ```
 
+උදා:-
+දැනට ඇති pods මොනවා දැයි බැලීමට
+```bash
+kubectl get pods
+```
+
 ### delete
 Delete resources by file names, stdin, resources and names, or by resources and label selector
 
