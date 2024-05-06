@@ -32,6 +32,31 @@ configuration file එකේ ඇති resources සියල්ල delete ක�
 kubectl delete -f <file_path>
 ```
 
+## Deploy Commands
+
+### rollout
+සාදාගත් kubernetes resource manage කිරීම මෙමගින් සිදුකරයි.
+
+නමුත් මෙමගින් manage කල හැක්කේ පහත resource පමණි.
+- deployments
+- daemonsets
+- statefulsets
+
+මෙමගින් පහත කාර්යයන් කරගත හැක.
+|Sub Command|Description|
+|-|-|
+|history|View rollout history|
+|pause|Mark the provided resource as paused|
+|restart|Restart a resource|
+|resume|Resume a paused resource|
+|status|Show the status of the rollout|
+|undo|Undo a previous rollout|
+
+මෙය පහත පරිදි භාවිතා කලහැක.
+```bash
+kubectl rollout <sub_command> <resource_type> <resource_name>
+```
+
 ## Troubleshooting and Debugging Commands
 
 ### describe
