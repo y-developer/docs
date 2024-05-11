@@ -9,7 +9,7 @@
 
 ## Resources
 
-[![pod](../images/kubernetes/res-pod-logo.png)](./README.md)
+[![pod](../images/kubernetes/res-pod-logo.png =75x75)](./README.md)
 [![deployment](../images/kubernetes/res-deploy-logo.png)](./kubernetes_service.md)
 [![service](../images/kubernetes/res-svc-logo.png)](./kubernetes_service.md)
 [![ingress](../images/kubernetes/res-ing-logo.png)](./README.md)
