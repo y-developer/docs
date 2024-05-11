@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../images/kubernetes/helm.png" />
+  <img src="../images/kubernetes/helm-logo.png" />
 </p>
 
 # Helm

@@ -9,9 +9,12 @@
 
 ## Resources
 
-[![service](../images/kubernetes/k8s-service.png)](./kubernetes_service.md)
+[![pod](../images/kubernetes/res-pod-logo.png)](./README.md)
+[![deployment](../images/kubernetes/res-deploy-logo.png)](./kubernetes_service.md)
+[![service](../images/kubernetes/res-svc-logo.png)](./kubernetes_service.md)
+[![ingress](../images/kubernetes/res-ing-logo.png)](./README.md)
 
 ## Helm
 The package manager for Kubernetes
 
-[![helm](../images/kubernetes/helm.png)](./helm.md)
+[![helm](../images/kubernetes/helm-logo.png)](./helm.md)
