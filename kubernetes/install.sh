@@ -13,3 +13,9 @@ echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.
 sudo apt update
 
 sudo apt-get install -y kubelet kubeadm kubectl
+
+# Helm installation
+read -p "Do you need to install Helm? [Y/n]" install_helm
+if [ $install_helm = "Y" || $install_helm = "y" ]; then
+    sh ./install_helm.sh
+fi
