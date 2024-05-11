@@ -18,5 +18,5 @@ sudo apt-get install -y kubelet kubeadm kubectl
 read -p "Do you need to install Helm? [Y/n] " install_helm
 install_helm=$(echo "$install_helm" | tr '[:upper:]' '[:lower:]')
 if [ "$install_helm" = "y" ]; then
-    sh ./install_helm.sh
+    sh docs/kubernetes/install_helm.sh
 fi
