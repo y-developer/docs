@@ -7,6 +7,10 @@
 [![How to install Kubernetes in Ubuntu](../images/kubernetes/install.jpg)](./install_kubernetes.md)
 [![Kubernetes commands](../images/kubernetes/commands.jpg)](./kubernetes_commands.md)
 
+## Setup
+
+[![alias k](../images/kubernetes/alias_k.jpg)](./alias_k.md)
+
 ## Resources
 
 [<img src="../images/kubernetes/res-pod-logo.png" width="75" alt="pod" />](./README.md)
