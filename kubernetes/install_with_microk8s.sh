@@ -8,4 +8,8 @@ sudo usermod -a -G microk8s $USER
 mkdir -p ~/.kube
 chmod 0700 ~/.kube
 
-exec bash
+read -p "Do you want reboot server? [Y/n]: " will_reboot
+
+if [ "$will_reboot" = "Y" ] || [ "$will_reboot" = "y" ]; then
+    sudo reboot
+fi
