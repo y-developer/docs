@@ -8,6 +8,8 @@ sudo usermod -a -G microk8s $USER
 mkdir -p ~/.kube
 chmod 0700 ~/.kube
 
-su - $USER
+read -p "Do you want reboot server? [Y/n]: " will_reboot
 
-alias kubectl='microk8s kubectl'
+if [ "$will_reboot" = "Y" ] || [ "$will_reboot" = "y" ]; then
+    sudo reboot
+fi
