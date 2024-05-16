@@ -8,6 +8,7 @@
 [![python](../images/python-logo.png)](./install_python.md)
 [![docker](../images/docker-logo.png)](../docker/install_docker.md)
 [![rust](../images/rust-logo.png)](./install_rust.md)
+[![Transmission CLI](../images/transmission_cli_logo.png)](./transmission_cli/README.md)
 
 # How to Configure
 [![set time](../images/time-logo.png)](./set_time.md)

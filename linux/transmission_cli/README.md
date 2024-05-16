@@ -1,4 +1,5 @@
 # Transmission CLI
+Cross-platform BitTorrent client
 
 ## Install
 ```bash
