@@ -4,6 +4,12 @@
 
 # Snapcraft - Universal Linux Packages
 
+Install snap on Ubuntu
+```bash
+sudo apt update
+sudo apt install snapd
+```
+
 help වෙත පිවිසීම
 ```bash
 snap help
