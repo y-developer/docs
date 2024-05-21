@@ -1,11 +1,28 @@
 # User and Group Management
 
-## අලුතින් user accout එකක් සෑදීම.
+- [User and Group Management](#user-and-group-management)
+  - [User Accounts](#user-accounts)
+    - [අලුතින් user accout එකක් සෑදීම.](#අලුතින්-user-accout-එකක්-සෑදීම)
+    - [දැනට ඇති user account මොනවාදැයි බැලීම.](#දැනට-ඇති-user-account-මොනවාදැයි-බැලීම)
+    - [User account එකක් delete කිරීම.](#user-account-එකක්-delete-කිරීම)
+    - [Password එක වෙනස් කිරීම](#password-එක-වෙනස්-කිරීම)
+    - [එක් User account එකක සිට තවත් user account එකකට මාරු වීමට](#එක්-user-account-එකක-සිට-තවත්-user-account-එකකට-මාරු-වීමට)
+  - [User Groups](#user-groups)
+    - [User account එක ඇතුලත් වන Groups මොනවාදැයි බැලීම](#user-account-එක-ඇතුලත්-වන-groups-මොනවාදැයි-බැලීම)
+    - [දැනට ඇති groups මොනවාදැයි බැලීමට](#දැනට-ඇති-groups-මොනවාදැයි-බැලීමට)
+    - [අලුතින් group එකක් සෑදීම](#අලුතින්-group-එකක්-සෑදීම)
+    - [දැනට පවතින group එකක් delete කිරීම](#දැනට-පවතින-group-එකක්-delete-කිරීම)
+    - [user කෙනෙක් sudo group එකකට add කිරීමට](#user-කෙනෙක්-sudo-group-එකකට-add-කිරීමට)
+    - [user කෙනෙක් group එකකට ඇතුලත් කිරීම](#user-කෙනෙක්-group-එකකට-ඇතුලත්-කිරීම)
+    - [user කෙනෙක් group එකකින් ඉවත් කිරීම](#user-කෙනෙක්-group-එකකින්-ඉවත්-කිරීම)
+
+## User Accounts
+### අලුතින් user accout එකක් සෑදීම.
 ```bash
 sudo adduser <username>
 ```
 
-## දැනට ඇති user account මොනවාදැයි බැලීම.
+### දැනට ඇති user account මොනවාදැයි බැලීම.
 ```bash
 cat /etc/passwd
 ```
@@ -31,7 +48,7 @@ cat /etc/passwd
 cat /etc/passwd | wc -l
 ```
 
-## User account එකක් delete කිරීම.
+### User account එකක් delete කිරීම.
 මෙහිදී user account එකට අදාල home directory එක delete වීමක් සිදුනොවේ.
 ```bash
 sudo deluser <username>
@@ -42,7 +59,7 @@ sudo deluser <username>
 sudo deluser --remove-home <username>
 ```
 
-## Password එක වෙනස් කිරීම
+### Password එක වෙනස් කිරීම
 දැනට log වී ඇති user account එකේ password එක වෙනස් කිරීම.
 ```bash
 passwd
@@ -53,7 +70,13 @@ passwd
 sudo passwd <usename>
 ```
 
-## User account එක ඇතුලත් වන Groups මොනවාදැයි බැලීම
+### එක් User account එකක සිට තවත් user account එකකට මාරු වීමට
+```bash
+su <username>
+```
+
+## User Groups
+### User account එක ඇතුලත් වන Groups මොනවාදැයි බැලීම
 දැනට log වී ඇති user account එක අයත් වන groups මොනවාදැයි බැලීම.
 ```bash
 groups
@@ -67,7 +90,7 @@ groups
 groups <username>
 ```
 
-## දැනට ඇති groups මොනවාදැයි බැලීමට
+### දැනට ඇති groups මොනවාදැයි බැලීමට
 ```bash
 cat /etc/group
 ```
@@ -83,22 +106,33 @@ cat /etc/group
 |`C`|`Group ID (GID)`|A unique numerical identifier for the group.|
 |`D`|`User List`|A list of users who are members of this group. If empty, no users are members of the group.|
 
-## අලුතින් group එකක් සෑදීම
+### අලුතින් group එකක් සෑදීම
 ```bash
 sudo addgroup <group_name>
 ```
 
-## දැනට පවතින group එකක් delete කිරීම
+### දැනට පවතින group එකක් delete කිරීම
 ```bash
 sudo delgroup <group_name>
 ```
 
-## user කෙනෙක් group එකකට ඇතුලත් කිරීම
+### user කෙනෙක් sudo group එකකට add කිරීමට
+මේ සදහා පළමුව root user account එකට යා යුතුය.
+```bash
+su root
+```
+
+දැන් අදාල user ව පහත ආකාරයට sudo group එකට add කරන්න.
+```bash
+usermod -a -G sudo <username>
+```
+
+### user කෙනෙක් group එකකට ඇතුලත් කිරීම
 ```bash
 sudo gpasswd --add <username> <group_name> 
 ```
 
-## user කෙනෙක් group එකකින් ඉවත් කිරීම
+### user කෙනෙක් group එකකින් ඉවත් කිරීම
 ```bash
 sudo gpasswd --delete <username> <group_name> 
 ```
