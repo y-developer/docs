@@ -20,6 +20,22 @@ Kubernetes Services යනු pods වලට access කිරීම සදහා
 ## Service Types
 
 ### Cluster IP
+Example
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: <name>-svc
+spec:
+  type: ClusterIP
+  selector:
+    app: <name>
+  ports:
+  - name: <name>
+    protocol: TCP
+    port: <port>
+    targetPort: <port>
+```
 
 ### Node Port
 ```yaml

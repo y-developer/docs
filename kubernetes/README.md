@@ -14,9 +14,9 @@
 ## Resources
 
 [<img src="../images/kubernetes/res-pod-logo.png" width="75" alt="pod" />](./README.md)
-[<img src="../images/kubernetes/res-deploy-logo.png" width="75" alt="deployment" />](./README.md)
+[<img src="../images/kubernetes/res-deploy-logo.png" width="75" alt="deployment" />](./kubernetes_deployment.md)
 [<img src="../images/kubernetes/res-svc-logo.png" width="75" alt="service" />](./kubernetes_service.md)
-[<img src="../images/kubernetes/res-ing-logo.png" width="75" alt="ingress" />](./README.md)
+[<img src="../images/kubernetes/res-ing-logo.png" width="75" alt="ingress" />](./kubernetes_ingress.md)
 
 ## Helm
 The package manager for Kubernetes
