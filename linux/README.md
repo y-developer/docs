@@ -27,3 +27,7 @@
 [![snapcraft](../images/snapcraft_logo.png)](./snapcraft_guide.md)
 [![dpkg](../images/deb-package-logo.png)](./dpkg_guide.md)
 
+# Remote Desktop
+[![kasm desktop](../images/kasm-logo.png)](./kasm-desktop.md)
+
+
