@@ -12,7 +12,7 @@
 1. Goto google drive and make folder
 1. Share newly created folder with service account email
 
-![service account email](../../images/google-api/click-on-account-id.png)
+![share_folder_with_service_account_email.jpg](../../images/google-api/share_folder_with_service_account_email.jpg)
 
 
 ## Upload file
