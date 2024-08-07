@@ -22,7 +22,8 @@ spec:
         path: /
         backend:
           service:
-            name: <custer_ip_name>
+            name: <svc_name>
             port: 
-              number: 80
+              name: <port_name_in_svc>
+#             number:  <port_number_in_service>
 ```
