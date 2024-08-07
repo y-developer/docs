@@ -39,7 +39,34 @@ spec:
 
 ### Node Port
 ```yaml
-
+apiVersion: v1
+kind: Service
+metadata:
+  name: <name>-svc
+spec:
+  type: NodePort
+  selector:
+    app: <name>
+  ports:
+    - protocol: TCP
+      port: 80      # The port that will be exposed inside the cluster
+      targetPort: 8080  # The port on which your service is running
+      nodePort: 30007   # The port that will be exposed to the outside world
 ```
 
 ### Load Balancer
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: <name>-svc
+spec:
+  type: LoadBalancer
+  selector:
+    app: <name>
+  ports:
+    - protocol: TCP
+      port: 80      # The port that will be exposed outside the cluster
+      targetPort: 8080  # The port on which your service is running
+
+```
