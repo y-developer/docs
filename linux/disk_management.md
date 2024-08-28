@@ -58,7 +58,7 @@ sudo nano /etc/fstab
 
 දැන් එයට පහත සදහන් line එක add කර save කරන්න
 ```txt
-UUID=<uuid_එක> /mnt/disk1 <type_එක> defaults 0 2
+/dev/disk/by-uuid/<uuid_එක> /mnt/disk1 <type_එක> defaults 0 2
 ```
 uuid එක හා file type එක දැන ගැනීමට `lsblk -f` භාවිතා කරන්න.
 
