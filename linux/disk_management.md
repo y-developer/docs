@@ -1,5 +1,14 @@
 # Disk Management
 
+- [Disk Management](#disk-management)
+  - [PC එකට සම්බන්ධ කර ඇති disk මොනවාදැයි බැලීමට](#pc-එකට-සම්බන්ධ-කර-ඇති-disk-මොනවාදැයි-බැලීමට)
+  - [Disk එකක් තාවකාලිකව mount කිරීම](#disk-එකක්-තාවකාලිකව-mount-කිරීම)
+  - [Disk එකක් ස්ථීරව mount කිරීම](#disk-එකක්-ස්ථීරව-mount-කිරීම)
+  - [ssh හරහා remote disk එක්ක mount කිරීම](#ssh-හරහා-remote-disk-එක්ක-mount-කිරීම)
+  - [Disk එකක් unmount කිරීම](#disk-එකක්-unmount-කිරීම)
+  - [Disk එකක් Format කිරීම](#disk-එකක්-format-කිරීම)
+
+
 ## PC එකට සම්බන්ධ කර ඇති disk මොනවාදැයි බැලීමට
 ```bash
 lsblk
@@ -40,7 +49,7 @@ sudo mkdir /media/disk1
 sudo mount /dev/sdf1 /media/disk1/
 ```
 
-## Disk එකක් ස්ථීරව mount කිරීම.
+## Disk එකක් ස්ථීරව mount කිරීම
 සාමාන්‍යයෙන් ස්ථීරව mount කරනු ලබන්නේ sata මගින් සම්බන්ධ කර ඇති hard drive වේ.\
 පළමුව disk එක mount කිරීමට ස්ථානයක් තෝරාගත යුතුය. මේ සදහා ඹ්නෑම ස්ථානයක් තෝරාගත හැකි වුවද, ස්ථීර mount කිරීමක් සදහා බොහෝවිට භාවිතා කල යුතු වන්නේ `/mnt/` folder එකයි.
 
@@ -68,6 +77,31 @@ sudo mount -a
 ```
 
 දැන් system එක reboot කරන්න. reboot කිරීම පෙර සහ පසු `lsblk -f` භාවිතයෙන් ස්ථීර mount කිරීම නිවැරදිව සිදුවී ඇති දැයි දැනගන්න.
+
+## ssh හරහා remote disk එක්ක mount කිරීම
+
+SSHFS (SSH File System) install කිරීම
+```bash
+sudo apt-get install sshfs
+```
+
+දැන් `/etc/fstab` file එක edit කල යුතුය. ඒ සදහා `/etc/fstab` file එක nano editor එකෙන් open කරගන්න.
+```bash
+sudo nano /etc/fstab
+```
+
+දැන් එයට පහත සදහන් line එක add කර save කරන්න
+```txt
+<username>@<ip_address>:<disk_path> <mount_path> fuse.sshfs defaults,_netdev,IdentityFile=<ssh_public_key_path>,uid=1000,gid=1000,allow_other,reconnect 0 0
+```
+uuid එක හා file type එක දැන ගැනීමට `lsblk -f` භාවිතා කරන්න.
+
+`mount_path` එක home dir එකේ folder එකකට සිදුකර ඇතිනම් එය dock එකේ පෙන්නනු ඇත.
+
+දැන් mount කිරීම සිදුකරන්න.
+```bash
+sudo mount -a
+```
 
 ## Disk එකක් unmount කිරීම
 දැන් mount කරගත් `sdf1` unmount කරගන්නා ආකාරය සලකා බලමු.
