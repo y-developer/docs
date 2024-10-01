@@ -1,3 +1,5 @@
+# Backing up a Kubernetes cluster
+
 Backing up a Kubernetes cluster involves capturing essential data like cluster configurations, persistent data, and stateful application data. To move or restore a cluster on another server, you need to back up the following components:
 
 1. **Kubernetes Resources** (Deployments, Services, ConfigMaps, Secrets, etc.)
