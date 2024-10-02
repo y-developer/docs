@@ -5,7 +5,34 @@
 # Helm
 The package manager for Kubernetes
 
-## Install
+## Helm Repository
+
+### Add New repo
 ```bash
-sh docs/kubernetes/install_helm.sh
+helm repo add <repo_name> <repo_url>
+```
+**Ex:** To add the bitnami repository
+```bash
+helm repo add bitnami https://charts.bitnami.com/bitnami
+```
+
+### Get Repo List
+```bash
+helm repo list
+```
+
+### Update Repo
+```bash
+helm repo update
+```
+
+## Install Helm Package
+release-name යනු k8s cluster එක තුල install වෙන නමයි.
+```bash
+helm install <release-name> <chart-name-or-path>
+```
+
+## Update the Release
+```bash
+helm update <release-name> <chart-name-or-path>
 ```
