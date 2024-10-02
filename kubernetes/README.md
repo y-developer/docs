@@ -10,7 +10,7 @@
 
 ## Setup
 
-[![alias k](../images/kubernetes/alias_k.jpg)](./alias_k.md)
+[![alias k](../images/kubernetes/alias_k.jpg)](./alias.md)
 
 ## Resources
 
