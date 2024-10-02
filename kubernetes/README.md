@@ -6,6 +6,7 @@
 
 [![How to install Kubernetes in Ubuntu](../images/kubernetes/install.jpg)](./install_kubernetes.md)
 [![Kubernetes commands](../images/kubernetes/commands.jpg)](./kubernetes_commands.md)
+[![Kubernetes Backup and restore](../images/kubernetes/backup.jpg)](./backup_and_restore.md)
 
 ## Setup
 
