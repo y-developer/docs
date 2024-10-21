@@ -20,6 +20,12 @@ docker run --rm -v <volume_name>:/volume -v $(pwd):/backup busybox tar cvf /back
 ```
 
 ## Restore docker volume
+create volume
+```bash
+docker volume create <new_volume_name>
+```
+
+restore it
 ```bash
 docker run --rm -v <new_volume_name>:/volume -v /path/to/backup:/backup busybox tar xvf /backup/volume-backup.tar -C /volume
 ```
