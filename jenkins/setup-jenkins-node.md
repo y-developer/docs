@@ -42,5 +42,5 @@ javac -version
 ### Setup ssh key
 
 - Create ssh public and private key
-- Add public key to node pc's .ssh/authrize_keys
+- Add public key to node pc's .ssh/authorized_keys
 - Add private key to jenkins server
