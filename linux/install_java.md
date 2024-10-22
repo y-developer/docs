@@ -1,34 +1,38 @@
 # Install Java on Ubuntu Linux
 
+## Install LTS Open JDK versions
 
-### Install OpenJDK 8
+Search available versions
+```bash
+apt search openjdk
+```
+
+**Open JDK 8**
 ```bash
 sudo apt install openjdk-8-jdk
 ```
 
-### Install OpenJDK 11
+**Open JDK 11**
 ```bash
 sudo apt install openjdk-11-jdk
 ```
 
-### Install OpenJDK 14
-```bash
-sudo apt install openjdk-14-jdk
-```
-
-### Install OpenJDK 16
-```bash
-sudo apt install openjdk-16-jdk
-```
-
-### Install OpenJDK 17
+**Open JDK 17**
 ```bash
 sudo apt install openjdk-17-jdk
 ```
 
-### Install OpenJDK 18
+**Open JDK 21**
 ```bash
-sudo apt install openjdk-18-jdk
+sudo apt install openjdk-21-jdk
+```
+
+## Verify the Installation
+```bash
+java -version
+```
+```bash
+javac -version
 ```
 
 ## Set JAVA_HOME Path
@@ -62,3 +66,5 @@ You have successfully installed OpenJDK on your machine. You can verify your ins
 ```bash
 java -version
 ```
+
+[More Details](https://www.hostinger.com/tutorials/install-java-ubuntu?utm_medium=ppc&utm_campaign=Generic-Tutorials-DSA|NT:Se|LO:Other-ASIA-t2&gad_source=1&gclid=Cj0KCQjwmt24BhDPARIsAJFYKk3p0SeKuDWtZLEcX2Wl7hnxPK1GjmWJQtWwSA8tLw4s4iIdq8QF-DIaAiMMEALw_wcB)

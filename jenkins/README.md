@@ -1,3 +1,3 @@
 # Jenkins
 
-Setup jenkis
+- [Setup Jenkins Node](setup-jenkins-node.md)
