@@ -38,3 +38,9 @@ javac -version
 ```
 
 [more details about install java](../linux/install_java.md)
+
+### Setup ssh key
+
+- Create ssh public and private key
+- Add public key to node pc's .ssh/authrize_keys
+- Add private key to jenkins server
