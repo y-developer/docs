@@ -12,6 +12,9 @@ with authentication database
 ```sh
 mongosh "mongodb://<username>:<password>@<host>:<port>/?authSource=admin"
 ```
+```sh
+mongosh -u <username> -p <password> --authenticationDatabase admin
+```
 
 ### Show databases:
 ```sh
