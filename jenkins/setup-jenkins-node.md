@@ -16,6 +16,9 @@ sudo apt install openssh-server
 [How to install docker](../docker/install_docker.md)
 [Setup docker privilege](../docker/docker_root_privilege.md)
 
+### Install k8s
+[How to install kubernetes](../kubernetes/install_kubernetes.md)
+
 ### Install OpenJDK
 Update system
 ```bash
