@@ -40,6 +40,11 @@ java -version
 javac -version
 ```
 
+fill 'JavaPath' field like following example
+```
+/usr/lib/jvm/java-<version>-openjdk-amd64/bin/java
+```
+
 [more details about install java](../linux/install_java.md)
 
 ### Setup ssh key
