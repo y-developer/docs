@@ -40,7 +40,7 @@ java -version
 javac -version
 ```
 
-fill 'JavaPath' field like following example
+fill **JavaPath** field like following example
 ```
 /usr/lib/jvm/java-<version>-openjdk-amd64/bin/java
 ```
