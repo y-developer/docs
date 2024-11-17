@@ -113,3 +113,13 @@ SELECT * FROM <table_name>;
 ```bash
 DROP TABLE <table_name>;
 ```
+
+## Backup Database
+```bash
+pg_dump -h <host> -U <username> -d <database> --format=p --no-owner --no-privileges --data-only > <backup_file_path>.sql
+```
+
+## Restore Database
+```bash
+pg_restore -h <host> -p <port> -U <username> -d <database> <backup_file_path>
+```
