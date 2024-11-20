@@ -123,3 +123,7 @@ pg_dump -h <host> -U <username> -d <database> --format=p --no-owner --no-privile
 ```bash
 pg_restore -h <host> -p <port> -U <username> -d <database> <backup_file_path>
 ```
+Restore the Plain Text Dump: Use the psql command to restore the plain text dump file:
+```bash
+psql -h <host> -U <user> -d <database> -f <dump_file>.sql
+```
