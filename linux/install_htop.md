@@ -2,7 +2,6 @@
 
 Install htop
 ```bash
-sudo apt update
 sudo apt install htop
 ```
 
