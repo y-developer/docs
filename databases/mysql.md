@@ -58,6 +58,13 @@ SELECT * FROM <table එකේ නම>;
 DROP TABLE <table එකේ නම>;
 ```
 
+## Backup
+```bash
+mysqldump --no-tablespaces -u <db_user> -p<db_pass> <db_name> > <file_name>.sql
+```
 
-
+## Restore
+```bash
+mysql -u <db_user> -p<db_pass> <db_name> < <file_name>.sql
+```
 
