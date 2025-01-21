@@ -8,3 +8,5 @@ Install api routes
 ```bash
 php artisan install:api
 ```
+
+- [Cache Application Settings](./cache_settings.md)
