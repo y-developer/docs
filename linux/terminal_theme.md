@@ -1,4 +1,4 @@
-# Costomize Linux therminal
+# Customize Linux terminal
 
 https://github.com/romkatv/powerlevel10k
 
