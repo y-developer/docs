@@ -4,6 +4,7 @@
 <h1 align="center">Postgre SQL</h1>
 
 - [Docker postgresql contaienr එක තුල ඇති psql shell එකට පිවිසීම](#docker-postgresql-contaienr-එක-තුල-ඇති-psql-shell-එකට-පිවිසීම)
+- [K8s postgresql pod එකක් තුල ඇති psql shell එකට පිවිසීම](#k8s-postgresql-pod-එකක්-තුල-ඇති-psql-shell-එකට-පිවිසීම)
 - [Basic Commands](#basic-commands)
   - [දැනට ඇති Database වල විස්තර බලාගැනීම](#දැනට-ඇති-database-වල-විස්තර-බලාගැනීම)
   - [Connection Information බලාගැනීම](#connection-information-බලාගැනීම)
@@ -39,6 +40,11 @@ su postgres
 `psql` shell එකට පිවිසීම
 ```bash
 psql
+```
+
+## K8s postgresql pod එකක් තුල ඇති psql shell එකට පිවිසීම
+```bash
+k exec -it <pod_name> -n vecpad-dev -- psql -U <username> -d <database_name>
 ```
 
 ## Basic Commands
@@ -127,3 +133,4 @@ Restore the Plain Text Dump: Use the psql command to restore the plain text dump
 ```bash
 psql -h <host> -U <user> -d <database> -f <dump_file>.sql
 ```
+
