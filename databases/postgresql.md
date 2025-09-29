@@ -44,7 +44,7 @@ psql
 
 ## K8s postgresql pod එකක් තුල ඇති psql shell එකට පිවිසීම
 ```bash
-k exec -it <pod_name> -n vecpad-dev -- psql -U <username> -d <database_name>
+k exec -it <pod_name> -n <namespace> -- psql -U <username> -d <database_name>
 ```
 
 ## Basic Commands
@@ -133,4 +133,5 @@ Restore the Plain Text Dump: Use the psql command to restore the plain text dump
 ```bash
 psql -h <host> -U <user> -d <database> -f <dump_file>.sql
 ```
+
 
