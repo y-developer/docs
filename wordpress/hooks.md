@@ -184,7 +184,7 @@ register_deactivation_hook(__FILE__, 'callback');
 // Plugin deactivation (used with register function)
 ```
 
-** Common Priority Usage **
+**Common Priority Usage**
 ```php
 <?php
 add_action('init', 'callback', 10); // Default priority
