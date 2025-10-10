@@ -122,7 +122,7 @@ DROP TABLE <table_name>;
 
 ## Backup Database
 ```bash
-pg_dump -h <host> -U <username> -d <database> --format=p --no-owner --no-privileges --data-only > <backup_file_path>.sql
+pg_dump -h <host> -U <username> -d <database> --no-owner --no-privileges --inserts > <backup_file_path>.sql
 ```
 
 ## Restore Database
@@ -133,5 +133,6 @@ Restore the Plain Text Dump: Use the psql command to restore the plain text dump
 ```bash
 psql -h <host> -U <user> -d <database> -f <dump_file>.sql
 ```
+
 
 
