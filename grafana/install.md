@@ -33,3 +33,26 @@ Run docker command
 ```bash
 docker run --name promtail -d -v $(pwd):/mnt/config -v /var/log:/var/log --link loki grafana/promtail:3.4.1 -config.file=/mnt/config/promtail-config.yaml
 ```
+
+# Install using K8s Helm
+
+Add Grafana’s chart repository to Helm:
+```bash
+helm repo add grafana https://grafana.github.io/helm-charts
+```
+
+Update the chart repository:
+```bash
+helm repo update
+```
+
+Install all in one solution `grafana/loki-stack`
+
+Get values file
+```bash
+helm show values grafana/loki-stack > values.yaml
+```
+
+Edit it as you need
+
+
