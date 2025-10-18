@@ -71,4 +71,36 @@ vboxmanage list vms
 vboxusers යන user group එකට දැනට සිටින user ව add කරන්නන.
 ```
 sudo usermod -aG vboxusers <current_username>
+
 ```
+
+## Install Guest Additions CD
+Insert cd using `Devices > Insert` Guest Additions CD
+
+Create a directory to serve as the mount point:
+```bash
+sudo mkdir -p /mnt/cdrom
+```
+
+Find where is the cd
+```bash
+lsblk
+```
+
+Mount the CD-ROM device (/dev/sr0) to the new directory:
+```bash
+sudo mount /dev/sr0 /mnt/cdrom
+```
+
+Change your directory to the mounted CD:
+```bash
+cd /mnt/cdrom
+```
+
+Run the main installation script: (according to architecture)
+```bash
+sudo ./VBoxLinuxAdditions-arm64.run
+```
+
+
+
