@@ -7,7 +7,6 @@
 ## Quick Links
 
 - [Git Configuration](./git_config.md) - Set up your Git environment
-- [GitHub SSH Key](./github_ssh_key.md) - Configure SSH authentication for GitHub
 - [Git Branches](./git_branch.md) - Create, manage, and merge branches
 - [Git Checkout](./git_checkout.md) - Switch between branches and commits
 - [Git Reset](./git_rest.md) - Undo changes and reset repository state
