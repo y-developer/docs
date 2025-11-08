@@ -124,7 +124,7 @@ rclone <copy|move|sync> <local_source> <remote_name>:<destination_path>
 
 - account
 - key
-- endpoint
+- hard_delete
 
 set default for everything else.
 
