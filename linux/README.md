@@ -13,12 +13,14 @@
 
 # How to Use
 
+[![ufw](../images/linux/ufw-logo.jpg)](./ufw.md)
+
 # How to Configure
 [![set time](../images/linux/time-logo.png)](./set_time.md)
 [![set static ip](../images/linux/staticip-logo.png)](./set_static_ip/set_static_ip.md)
 [![change sinhala font](../images/linux/change-sinhal-font.png)](./change_default_sinhala_font.md)
 [![smtp](../images/linux/smtp-logo.png)](./setup_smtp.md)
-[![ssh](../images/linux/ssh-logo.png)](./setup_ssh.md)
+[![ssh](../images/linux/ssh-logo.jpg)](./setup_ssh.md)
 [![gitea](../images/linux/gita-logo.png)](./setup_gitea.md)
 [![cron job](../images/linux/cron-job-logo.png)](./setup_cron_job.md)
 [![nginx](../images/linux/nginx_logo.png)](./setup_nginx.md)
