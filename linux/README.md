@@ -14,7 +14,7 @@
 # How to Use
 
 [![ufw](../images/linux/ufw-logo.jpg)](./ufw.md)
-[![rclone](../images/linux/rclone-logo.jpg)](./rclone.md)
+[![rclone](../images/linux/rclone-logo.png)](./rclone.md)
 [![tar](../images/linux/tar-logo.png)](./tar.md)
 
 # How to Configure
