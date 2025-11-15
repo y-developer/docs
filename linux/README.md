@@ -14,6 +14,7 @@
 # How to Use
 
 [![ufw](../images/linux/ufw-logo.jpg)](./ufw.md)
+[![rclone](../images/linux/rclone-logo.jpg)](./rclone.md)
 
 # How to Configure
 [![set time](../images/linux/time-logo.png)](./set_time.md)
