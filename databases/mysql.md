@@ -60,7 +60,7 @@ DROP TABLE <table එකේ නම>;
 
 ## Backup
 ```bash
-mysqldump --no-tablespaces -u <db_user> -p<db_pass> <db_name> > <file_name>.sql
+mysqldump --no-tablespaces -u <db_user> -p'<db_pass>' <db_name> > <file_name>.sql
 ```
 
 ## Restore
