@@ -35,6 +35,22 @@ CREATE DATABASE <database එකේ නම>;
 DROP DATABASE <database එකේ නම>;
 ```
 
+## User Operations
+### User එකක් create කිරීම සදහා
+```sql
+CREATE USER '<username>'@'<host>' IDENTIFIED BY '<password>';
+```
+
+### User එකකට Database එකක් access කිරීමට අවසර ලබාදීම සදහා
+```sql
+GRANT ALL PRIVILEGES ON <database එකේ නම>.* TO '<username>'@'<host>';
+```
+
+### දැනට ඇති users මොනවාදැයි බැලීමට
+```sql
+SELECT User, Host FROM mysql.user;
+```
+
 ## Table Operations
 
 ### Database එකේ ඇති tables මොනවාදැයි බැලීමට
@@ -60,7 +76,7 @@ DROP TABLE <table එකේ නම>;
 
 ## Backup
 ```bash
-mysqldump --no-tablespaces -u <db_user> -p<db_pass> <db_name> > <file_name>.sql
+mysqldump --no-tablespaces -u <db_user> -p'<db_pass>' <db_name> > <file_name>.sql
 ```
 
 ## Restore

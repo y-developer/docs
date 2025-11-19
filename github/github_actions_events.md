@@ -1,5 +1,7 @@
 # Github Actions Events
 
+[Official Documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
+
 - [Github Actions Events](#github-actions-events)
   - [Manual \& Scheduled Triggers](#manual--scheduled-triggers)
     - [**`workflow_dispatch`**](#workflow_dispatch)
