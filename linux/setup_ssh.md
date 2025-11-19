@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../images/ssh-logo.png" />
+  <img src="../images/linux/ssh-logo.jpg" />
 </p>
 
 # Setup OpenSSH on Ubuntu Desktop 22.04
@@ -102,4 +102,5 @@ scp -P <port> <username>@<ip_address>:<destination_path> <local_file_path>
 
 ```bash
 scp -r -P <port> <username>@<ip_address>:<destination_path> <local_file_path>
+
 ```
