@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="../images/docker-logo.png" />
+  <img src="../images/linux/docker-logo.png" />
 </p>
 
 
@@ -62,5 +62,6 @@ Verify that the Docker Engine installation is successful by running the `hello-w
 ```bash
 sudo docker run hello-world
 ```
+
 
 more details https://docs.docker.com/engine/install/ubuntu/
