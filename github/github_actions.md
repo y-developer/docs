@@ -10,6 +10,18 @@
       - [Needs](#needs)
   - [Environment Variables](#environment-variables)
   - [Secrets and Variables](#secrets-and-variables)
+  - [Context Variables](#context-variables)
+    - [ප්‍රධාන Context වර්ග](#ප්රධාන-context-වර්ග)
+      - [1. **GitHub Context** (`github.*`)](#1-github-context-github)
+      - [2. **Runner Context** (`runner.*`)](#2-runner-context-runner)
+      - [3. **Env Context** (`env.*`)](#3-env-context-env)
+      - [4. **Secrets Context** (`secrets.*`)](#4-secrets-context-secrets)
+      - [5. **Steps Context** (`steps.*`)](#5-steps-context-steps)
+    - [ප්‍රායෝගික උදාහරණ](#ප්රායෝගික-උදාහරණ)
+      - [උදාහරණ 1: Main branch එකට push කරද්දී පමණක් deploy කරන්න](#උදාහරණ-1-main-branch-එකට-push-කරද්දී-පමණක්-deploy-කරන්න)
+      - [උදාහරණ 2: Docker image එකට tag කරන්න commit SHA එක use කරලා](#උදාහරණ-2-docker-image-එකට-tag-කරන්න-commit-sha-එක-use-කරලා)
+      - [උදාහරණ 3: Pull Request තොරතුරු පෙන්වන්න](#උදාහරණ-3-pull-request-තොරතුරු-පෙන්වන්න)
+    - [ඉතාමත් වැදගත් Variables](#ඉතාමත්-වැදගත්-variables)
 
 
 GitHub Actions යනු GitHub හි ඇතුළතම Continuous Integration (CI) සහ Continuous Deployment (CD) සේවාවකි. GitHub Actions මඟින් ඔබට ඔබේ කේතය සෑදීම, පරීක්ෂා කිරීම සහ නිකුත් කිරීම ස්වයංක්‍රීය කිරීමට හැකියාව ලැබේ.
@@ -124,3 +136,120 @@ jobs:
           echo "Secret Value: ${{ secrets.MY_SECRET }}"
           echo "Variable Value: ${{ vars.MY_VARIABLE }}"
 ```
+
+## Context Variables
+
+**Context variables** කියන්නේ GitHub Actions workflow එකක් run වෙන විට ස්වයංක්‍රීයව ලබාදෙන තොරතුරු වලට කියන නමයි. ඔබේ workflow එක තුළ ඔබට repository එක ගැන, commit එක ගැන, user ගැන වගේ විවිධ තොරතුරු භාවිතා කරන්න පුළුවන්.
+
+### ප්‍රධාන Context වර්ග
+
+#### 1. **GitHub Context** (`github.*`)
+Repository එක සහ workflow එක ගැන තොරතුරු .
+
+```yaml
+- name: තොරතුරු පෙන්වන්න
+  run: |
+    echo "Repository එක: ${{ github.repository }}"
+    echo "Branch එක: ${{ github.ref_name }}"
+    echo "Commit SHA: ${{ github.sha }}"
+    echo "User: ${{ github.actor }}"
+```
+
+**උදාහරණ output:**
+```
+Repository එක: myusername/myproject
+Branch එක: main
+Commit SHA: abc123def456
+User: octocat
+```
+
+#### 2. **Runner Context** (`runner.*`)
+Workflow එක run වෙන server එක ගැන තොරතුරු.
+
+```yaml
+- name: Runner තොරතුරු
+  run: |
+    echo "Operating System: ${{ runner.os }}"
+    echo "Architecture: ${{ runner.arch }}"
+```
+
+#### 3. **Env Context** (`env.*`)
+ඔබ විසින්ම set කරන environment variables.
+
+```yaml
+env:
+  APP_NAME: MyApp
+  VERSION: 1.0.0
+
+jobs:
+  build:
+    steps:
+      - name: App එක build කරන්න
+        run: echo "Building ${{ env.APP_NAME }} version ${{ env.VERSION }}"
+```
+
+#### 4. **Secrets Context** (`secrets.*`)
+Password, API keys වගේ රහස් තොරතුරු ආරක්ෂිතව භාවිතා කරන්න.
+
+```yaml
+- name: Docker login කරන්න
+  run: |
+    docker login -u ${{ secrets.DOCKER_USERNAME }} \
+                 -p ${{ secrets.DOCKER_PASSWORD }}
+```
+
+#### 5. **Steps Context** (`steps.*`)
+පෙර step එකක output එක භාවිතා කරන්න.
+
+```yaml
+- name: Version එක හොයන්න
+  id: get_version
+  run: echo "version=1.2.3" >> $GITHUB_OUTPUT
+
+- name: Version එක පෙන්වන්න
+  run: echo "අපේ version එක ${{ steps.get_version.outputs.version }}"
+```
+
+### ප්‍රායෝගික උදාහරණ
+
+#### උදාහරණ 1: Main branch එකට push කරද්දී පමණක් deploy කරන්න
+
+```yaml
+- name: Production එකට deploy කරන්න
+  if: github.ref == 'refs/heads/main'
+  run: ./deploy.sh
+```
+
+#### උදාහරණ 2: Docker image එකට tag කරන්න commit SHA එක use කරලා
+
+```yaml
+- name: Docker image build කරන්න
+  run: |
+    docker build -t myapp:${{ github.sha }} .
+    docker build -t myapp:latest .
+```
+
+#### උදාහරණ 3: Pull Request තොරතුරු පෙන්වන්න
+
+```yaml
+- name: PR තොරතුරු
+  if: github.event_name == 'pull_request'
+  run: |
+    echo "PR එක කළේ: ${{ github.actor }}"
+    echo "Source branch: ${{ github.head_ref }}"
+    echo "Target branch: ${{ github.base_ref }}"
+```
+
+### ඉතාමත් වැදගත් Variables
+
+| Variable               | අර්ථය             | උදාහරණය                 |
+| ---------------------- | ---------------- | ---------------------- |
+| `github.repository`    | Repository නම    | `octocat/Hello-World`  |
+| `github.ref_name`      | Branch/tag නම    | `main`                 |
+| `github.sha`           | Commit SHA       | `abc123...`            |
+| `github.actor`         | User නම          | `octocat`              |
+| `github.event_name`    | Event එක         | `push`, `pull_request` |
+| `runner.os`            | Operating System | `Linux`, `Windows`     |
+| `secrets.GITHUB_TOKEN` | Auto token       | `***`                  |
+
+[තවදුරටත් බලන්න](./github_actions_context_variables.md)
