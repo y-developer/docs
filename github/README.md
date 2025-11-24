@@ -6,5 +6,5 @@
 
 ## Quick Links
 
-- [GitHub Actions Events](./github_actions_events.md) - List of workflow triggers
+- [GitHub Actions](./github_actions.md)
 - [GitHub SSH Key Setup](./github_ssh_key.md) - Secure authentication for GitHub
