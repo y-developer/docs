@@ -168,6 +168,7 @@ jobs:
 GitHub Actions workflow එකක් තුළ sensitive data (e.g., API keys, passwords) සහ non-sensitive configuration data (e.g., deployment environments, feature flags) භාවිතා කිරීමට Secrets සහ Variables භාවිතා කළ හැක. 
 
 මෙය 
+
 `https://github.com/organization/<your-organization>/settings/secrets/actions` 
 
 හෝ 
