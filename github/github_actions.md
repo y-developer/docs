@@ -8,9 +8,7 @@
       - [Run On](#run-on)
       - [Steps](#steps)
       - [Needs](#needs)
-  - [Environment Variables](#environment-variables)
-  - [Secrets and Variables](#secrets-and-variables)
-  - [Context Variables](#context-variables)
+  - [Variables and Secrets](#variables-and-secrets)
     - [ප්‍රධාන Context වර්ග](#ප්රධාන-context-වර්ග)
       - [1. **GitHub Context** (`github.*`)](#1-github-context-github)
       - [2. **Runner Context** (`runner.*`)](#2-runner-context-runner)
@@ -115,29 +113,7 @@ jobs:
 
 ![dependent jobs](../images/github/need-jobs.jpg)
 
-
-## Environment Variables
-GitHub Actions workflow එකක් තුළ environment variables භාවිතා කළ හැක. Environment variables මඟින් workflow එකේ steps අතර දත්ත හුවමාරු කිරීම පහසු වේ. Environment variables define කිරීම සඳහා `env` keyword එක භාවිතා කරයි. [තවදුරටත් බලන්න](./github_actions_env_variables.md)
-
-## Secrets and Variables
-GitHub Actions workflow එකක් තුළ sensitive data (e.g., API keys, passwords) සහ non-sensitive configuration data (e.g., deployment environments, feature flags) භාවිතා කිරීමට Secrets සහ Variables භාවිතා කළ හැක. 
-
-මෙය ් `https://github.com/organization/<your-organization>/settings/secrets/actions` හෝ 
-
-Settings > Secrets and variables > Actions යන මාර්ගයෙන් කළ හැක. Secrets සහ Variables workflow එකේ steps අතර environment variables ලෙස භාවිතා කළ හැක. Secrets සහ Variables define කිරීම සඳහා `secrets` සහ `vars` keywords භාවිතා කරයි.
-
-```yaml
-jobs:
-  example-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Use Secrets and Variables
-        run: |
-          echo "Secret Value: ${{ secrets.MY_SECRET }}"
-          echo "Variable Value: ${{ vars.MY_VARIABLE }}"
-```
-
-## Context Variables
+## Variables and Secrets
 
 **Context variables** කියන්නේ GitHub Actions workflow එකක් run වෙන විට ස්වයංක්‍රීයව ලබාදෙන තොරතුරු වලට කියන නමයි. ඔබේ workflow එක තුළ ඔබට repository එක ගැන, commit එක ගැන, user ගැන වගේ විවිධ තොරතුරු භාවිතා කරන්න පුළුවන්.
 
@@ -174,7 +150,7 @@ Workflow එක run වෙන server එක ගැන තොරතුරු.
 ```
 
 #### 3. **Env Context** (`env.*`)
-ඔබ විසින්ම set කරන environment variables.
+GitHub Actions workflow එකක් තුළ environment variables භාවිතා කළ හැක. Environment variables මඟින් workflow එකේ steps අතර දත්ත හුවමාරු කිරීම පහසු වේ. Environment variables define කිරීම සඳහා `env` keyword එක භාවිතා කරයි. [තවදුරටත් බලන්න](./github_actions_env_variables.md)
 
 ```yaml
 env:
@@ -189,7 +165,16 @@ jobs:
 ```
 
 #### 4. **Secrets Context** (`secrets.*`)
-Password, API keys වගේ රහස් තොරතුරු ආරක්ෂිතව භාවිතා කරන්න.
+GitHub Actions workflow එකක් තුළ sensitive data (e.g., API keys, passwords) සහ non-sensitive configuration data (e.g., deployment environments, feature flags) භාවිතා කිරීමට Secrets සහ Variables භාවිතා කළ හැක. 
+
+මෙය 
+`https://github.com/organization/<your-organization>/settings/secrets/actions` 
+
+හෝ 
+
+`Settings > Secrets and variables > Actions` 
+
+යන මාර්ගයෙන් කළ හැක. Secrets සහ Variables workflow එකේ steps අතර environment variables ලෙස භාවිතා කළ හැක. Secrets සහ Variables define කිරීම සඳහා `secrets` සහ `vars` keywords භාවිතා කරයි.
 
 ```yaml
 - name: Docker login කරන්න
