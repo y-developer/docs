@@ -78,7 +78,7 @@ rclone <copy|move|sync> <source> <destination>
 ## Configuration
 
 ```bash
-reclone config
+rclone config
 ```
 
 ### SSH/SFTP (sftp) `50`
