@@ -12,3 +12,4 @@
 - [Git Reset](./git_rest.md) - Undo changes and reset repository state
 - [Git Tags](./git_tags.md) - Create and manage version tags
 - [Git Submodules](./submodules.md) - Work with nested repositories
+- [Git Diff](./git_diff.md) - make git diff file
